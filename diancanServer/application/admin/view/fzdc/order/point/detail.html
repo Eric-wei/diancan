@@ -1,0 +1,83 @@
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>{:__('Title')}</th>
+        <th>{:__('Content')}</th>
+
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr>
+        <td>{:__('Order_no')}</td>
+        <td style="word-break: break-all;">{$row['order_no']}</td>
+    </tr>
+    <tr>
+        <td>{:__('下单用户')}</td>
+        <td style="word-break: break-all;">{$row['user']['username']}</td>
+    </tr>
+    <tr>
+        <td>{:__('产品标题')}</td>
+        <td style="word-break: break-all;">{$row['pointgoods']['title']}</td>
+    </tr>
+
+    <tr>
+        <td>{:__('Status')}</td>
+        <td style="word-break: break-all;">{php}{ if($row['status'] == "1"){echo "待发货";} elseif ($row['status'] == "2")
+            {echo "已发货";} elseif($row['status'] == "3") {echo "已完成";} }{/php}
+        </td>
+    </tr>
+    <tr>
+        <td>{:__('Goods_count')}</td>
+        <td style="word-break: break-all;">{$row['goods_count']}</td>
+    </tr>
+    <tr>
+        <td>{:__('Goods_price')}</td>
+        <td style="word-break: break-all;">{$row['goods_price']}</td>
+    </tr>
+
+    <tr>
+        <td>{:__('Order_amount_total')}</td>
+        <td style="word-break: break-all;">{$row['order_amount_total']}</td>
+    </tr>
+    <tr>
+        <td>{:__('Pay_time')}</td>
+        <td style="word-break: break-all;">{$row['pay_time']|datetime}</td>
+    </tr>
+    <?php if($row['coupon_id'] == 0){ ?>
+    <tr>
+        <td>{:__('发货时间')}</td>
+        <td style="word-break: break-all;">{$row['delivery_time']}</td>
+    </tr>
+    <tr>
+        <td>{:__('快递公司')}</td>
+        <td style="word-break: break-all;">{$row['courier']}</td>
+    </tr>
+    <tr>
+        <td>{:__('快递单号')}</td>
+        <td style="word-break: break-all;">{$row['numbers']}</td>
+    </tr>
+    <tr>
+        <td>{:__('收货人')}</td>
+        <td style="word-break: break-all;">{$row['address']['title']}{$row['address']['suffix']}</td>
+    </tr>
+    <tr>
+        <td>{:__('收货人手机号')}</td>
+        <td style="word-break: break-all;">{$row['address']['mobile']}</td>
+    </tr>
+    <tr>
+        <td>{:__('收货地址')}</td>
+        <td style="word-break: break-all;">{$row['address']['address']}{$row['address']['remark']}</td>
+    </tr>
+    <?php } ?>
+
+
+    </tbody>
+</table>
+<div class="hide layer-footer">
+    <label class="control-label col-xs-12 col-sm-2"></label>
+    <div class="col-xs-12 col-sm-8">
+        <button type="reset" class="btn btn-primary btn-embossed btn-close" onclick="Layer.closeAll();">{:__('Close')}
+        </button>
+    </div>
+</div>

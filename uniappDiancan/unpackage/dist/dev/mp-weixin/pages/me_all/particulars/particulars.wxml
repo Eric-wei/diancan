@@ -1,0 +1,1 @@
+<view><image src="{{content.image}}" mode="widthFix"></image><view class="box"><rich-text nodes="{{content.content}}"></rich-text></view></view>

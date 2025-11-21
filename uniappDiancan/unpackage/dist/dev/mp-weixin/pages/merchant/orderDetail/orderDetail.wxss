@@ -1,0 +1,374 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* uni.scss */
+/* 颜色变量 */
+/* 行为相关颜色 - KFC主题色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.minus {
+  border: 1rpx solid #00ABFF;
+  width: 34rpx;
+  height: 34rpx;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pb0 {
+  padding-bottom: 0 !important;
+}
+.order_avatar .order_avatara {
+  width: 32rpx;
+  height: 32rpx;
+  border-radius: 999%;
+  margin-right: 6rpx;
+  border: 2rpx solid #333;
+}
+.order_avatar .order_avatarname {
+  font-size: 24rpx;
+  color: #777777;
+}
+.funbuts {
+  width: 100%;
+  padding: 24rpx 32px 30rpx 32rpx;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+}
+.funbuts .funbutsA {
+  width: 206rpx;
+  height: 72rpx;
+  border-radius: 8rpx 8rpx 8rpx 8rpx;
+  border: 2rpx solid #777777;
+  font-size: 30rpx;
+  color: #777777;
+  margin-left: 32rpx;
+}
+.funbuts .funbutsB {
+  width: 206rpx;
+  height: 72rpx;
+  background: #E40030;
+  border-radius: 8rpx 8rpx 8rpx 8rpx;
+  font-size: 30rpx;
+  color: #FFFFFF;
+  margin-left: 32rpx;
+}
+.orderbottomdetail {
+  line-height: 1;
+  padding: 32rpx 20rpx 10rpx 20rpx;
+  box-sizing: border-box;
+}
+.pd24 {
+  padding: 0 24rpx;
+  box-sizing: border-box;
+}
+.mt24 {
+  margin-top: 24rpx;
+}
+.pd20 {
+  padding: 24rpx 0;
+  box-sizing: border-box;
+}
+.input {
+  padding: 0 10px;
+}
+.plus {
+  width: 34rpx;
+  height: 34rpx;
+  background-color: #00ABFF;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+.fixed .btn {
+  width: 750rpx;
+  height: 120rpx;
+  background: #00ABFF;
+  text-align: center;
+  line-height: 120rpx;
+  color: #fff;
+  font-size: 28rpx;
+}
+.fixed .btn1 {
+  width: 375rpx;
+  height: 120rpx;
+  background: #FFFFFF;
+  font-size: 34rpx;
+  color: #777777;
+  text-align: center;
+  line-height: 120rpx;
+}
+.fixed .btn2 {
+  width: 375rpx;
+  height: 120rpx;
+  background: #E40030;
+  font-size: 34rpx;
+  color: #ffffff;
+  text-align: center;
+  line-height: 120rpx;
+}
+.card {
+  width: 100vw;
+  background-color: #fff;
+  padding: 25rpx 34rpx;
+  box-sizing: border-box;
+}
+.card .black {
+  font-size: 32rpx;
+  color: #333333;
+}
+.card .orange {
+  width: 520rpx;
+  font-size: 30rpx;
+  color: #FF9C2E;
+}
+.card .user .left {
+  font-size: 32rpx;
+  color: #333333;
+}
+.card .user .left image {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+.card .user .right image {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+}
+.order_details {
+  padding: 25rpx 25rpx 0 25rpx;
+}
+.order_details .card_one {
+  background: #FFFFFF;
+  border-radius: 10rpx;
+  padding: 20rpx 30rpx;
+}
+.order_details .card_one .left {
+  font-size: 40rpx;
+  color: #333333;
+}
+.order_details .card_one .right {
+  font-size: 34rpx;
+  color: #FF9C2E;
+  line-height: 50rpx;
+}
+.order_details .card_two {
+  background: #FFFFFF;
+  border-radius: 10rpx;
+  padding: 20rpx 30rpx;
+  margin: 20rpx 0;
+}
+.order_details .card_two .left {
+  font-size: 32rpx;
+  color: #333333;
+}
+.order_details .card_two .right {
+  font-size: 32rpx;
+  color: #333333;
+}
+.order_details .itemborder {
+  border-bottom: 2rpx solid #EBEBEB;
+}
+.order_details .card_three {
+  background: #FFFFFF;
+  border-radius: 10rpx;
+  padding: 14rpx 30rpx;
+  margin: 20rpx 0;
+}
+.order_details .card_three .card_threetitle {
+  font-weight: bold;
+  font-size: 28rpx;
+  color: #333333;
+  padding: 15rpx 0 24rpx 0;
+  box-sizing: border-box;
+}
+.order_details .card_three .item1 {
+  padding: 20rpx 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+.order_details .card_three .item1 .quna {
+  width: 35rpx;
+  height: 35rpx;
+  margin-right: 12rpx;
+}
+.order_details .card_three .item1 .left {
+  font-size: 24rpx;
+  color: #333333;
+}
+.order_details .card_three .item1 .right {
+  font-size: 34rpx;
+  color: #FB2A57;
+}
+.order_details .card_three .item1 .one {
+  font-size: 30rpx;
+  color: #333333;
+}
+.order_details .card_three .item1 .two {
+  font-size: 24rpx;
+  color: #777777;
+}
+.order_details .card_three .item1 .thr {
+  font-size: 42rpx;
+  color: #333333;
+}
+.order_details .card_three .item {
+  min-height: 80rpx;
+  padding: 24rpx 0;
+  box-sizing: border-box;
+}
+.order_details .card_three .item .left {
+  font-size: 28rpx;
+  color: #777777;
+}
+.order_details .card_three .item .right {
+  font-size: 26rpx;
+  color: #333333;
+  max-width: 230px;
+  text-align: right;
+}
+.order_details .card_four {
+  background: #FFFFFF;
+  border-radius: 10rpx;
+  padding: 24rpx 30rpx;
+}
+.order_details .card_four .title {
+  font-size: 32rpx;
+  border-bottom: 1rpx solid #F2F2F2;
+  color: #232323;
+  padding: 0 0 12rpx;
+  box-sizing: border-box;
+}
+.order_details .card_four .title .title_right {
+  padding-top: 6rpx;
+  box-sizing: border-box;
+}
+.order_details .card_four .title .title_right image {
+  width: 38rpx;
+  height: 38rpx;
+  border-radius: 50%;
+}
+.order_details .card_four .setheg {
+  width: 150rpx;
+  font-size: 20rpx;
+  color: #777777;
+  text-align: center;
+  margin: 34rpx auto 0;
+}
+.order_details .card_four .shop {
+  margin: 20rpx 0;
+}
+.order_details .card_four .shop image {
+  width: 122rpx;
+  height: 120rpx;
+  border-radius: 10rpx;
+  margin-right: 20rpx;
+}
+.order_details .card_four .shop .shop_item {
+  width: 500rpx;
+  flex-direction: column;
+}
+.order_details .card_four .shop .shop_item .one {
+  font-size: 28rpx;
+  color: #333333;
+}
+.order_details .card_four .shop .shop_item .two {
+  font-size: 24rpx;
+  color: #AAAAAA;
+  margin: 6rpx 0;
+}
+.order_details .card_four .shop .shop_item .three {
+  font-size: 24rpx;
+  color: #AAAAAA;
+}
+.order_details .card_five {
+  background: #FFFFFF;
+  border-radius: 10rpx;
+  padding: 14rpx 30rpx;
+  margin: 20rpx 0;
+  font-size: 32rpx;
+  color: #333333;
+}
+.order_details .card_five .right {
+  width: 530rpx;
+}
+.userPop {
+  padding: 33rpx 40rpx 170rpx;
+  box-sizing: border-box;
+}
+.userPop .userPop_ipts {
+  margin-top: 38rpx;
+  font-size: 32rpx;
+}
+.userPop .userPop_ipt {
+  border-bottom: 1rpx solid #EBEBEB;
+  padding-bottom: 6rpx;
+}
+.userPop .userPop_ipt input {
+  width: 221rpx;
+}
+.delPop {
+  padding: 70rpx 98rpx;
+  box-sizing: border-box;
+}
+.delPop .delPop_title {
+  font-size: 40rpx;
+  color: #232323;
+  font-weight: 700;
+}
+.delPop .delpop_btns {
+  margin-top: 76rpx;
+}
+.delPop .delpop_btns .delpop_qx_btn {
+  width: 183rpx;
+  height: 64rpx;
+  background: #D8D8D8;
+  border-radius: 8rpx;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 64rpx;
+}
+.delPop .delpop_btns .delpop_qd_btn {
+  width: 183rpx;
+  height: 64rpx;
+  background: #00ABFF;
+  border-radius: 8rpx;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 64rpx;
+}
+

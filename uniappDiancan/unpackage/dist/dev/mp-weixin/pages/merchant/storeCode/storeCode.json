@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "店铺码",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "u-navbar": "/node-modules/uview-ui/components/u-navbar/u-navbar",
+    "height": "/components/height/height"
+  }
+}

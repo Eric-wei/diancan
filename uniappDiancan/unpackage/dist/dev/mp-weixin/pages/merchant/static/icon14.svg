@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>选择提现方式</title>
+    <defs>
+        <rect id="path-1" x="-1" y="1175" width="751" height="148"></rect>
+        <filter x="-0.1%" y="-0.3%" width="100.1%" height="100.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.894117647   0 0 0 0 0.894117647   0 0 0 0 0.894117647  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="餐饮预订商家版" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="选择提现方式" transform="translate(-39.000000, -1209.000000)">
+            <rect fill="#FAFAFA" x="0" y="0" width="750" height="1544"></rect>
+            <rect id="矩形" fill-opacity="0.401414991" fill="#000000" x="0" y="0" width="750" height="1544"></rect>
+            <path d="M20,747 L730,747 C741.045695,747 750,755.954305 750,767 L750,1544 L750,1544 L0,1544 L0,767 C-1.3527075e-15,755.954305 8.954305,747 20,747 Z" id="矩形" fill="#FFFFFF"></path>
+            <g id="矩形备份-26" fill="black" fill-opacity="1">
+                <use filter="url(#filter-2)" xlink:href="#path-1"></use>
+            </g>
+            <g id="加号" transform="translate(39.000000, 1209.000000)" fill="#999999" fill-rule="nonzero">
+                <rect id="矩形" opacity="0" x="0" y="0" width="80" height="80"></rect>
+                <polygon id="路径" points="37.499978 37.499978 37.499978 20 42.500022 20 42.500022 37.499978 60 37.499978 60 42.500022 42.500022 42.500022 42.500022 60 37.499978 60 37.499978 42.500022 20 42.500022 20 37.499978"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

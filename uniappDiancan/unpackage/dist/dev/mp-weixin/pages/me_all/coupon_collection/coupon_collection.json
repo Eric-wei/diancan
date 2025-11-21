@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "领取优惠劵",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#fff",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "navbar": "/components/navbar/navbar",
+    "height": "/components/height/height",
+    "u-empty": "/node-modules/uview-ui/components/u-empty/u-empty",
+    "login": "/components/login/login"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "会员码",
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-navbar": "/node-modules/uview-ui/components/u-navbar/u-navbar",
+    "height": "/components/height/height"
+  }
+}

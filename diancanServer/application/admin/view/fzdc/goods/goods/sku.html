@@ -1,0 +1,150 @@
+<style>
+    .panel-default {
+        margin-top: 10px;
+        margin-bottom: 0px
+    }
+
+    .fzdc_goods {
+        padding: 10px 4px
+    }
+
+    .tag-content {
+        padding-top: 5px
+    }
+
+    .tag-content span {
+        margin-right: 10px;
+    }
+
+    .tag-content span i {
+        cursor: pointer
+    }
+
+    .input-group-addon {
+        padding: 6px
+    }
+
+    .fzdc_content_b {
+        overflow-x: auto;
+        display: block;
+        margin-top: 10px;
+        border: 1px solid #ddd
+    }
+
+    .fzdc_content {
+        width: 900px;
+    }
+
+    .fzdc_content tr td {
+        white-space: nowrap
+    }
+</style>
+<div class="form-group">
+    <label class="control-label col-xs-12 col-sm-2">库存/规格</label>
+    <div id="app" v-cloak class="col-xs-12 col-sm-8">
+        <div class="input-group"><input type="text" class="form-control" placeholder="输入规格名称" ref="attr-group-name">
+            <span class="input-group-addon pointer" style="cursor: pointer" @click="addRow">添加规格</span></div>
+        <!-- 规格项 -->
+        <div class="sku-content">
+            <div class="panel panel-default" v-for="(v, i) in attrGroups">
+                <header class="panel-heading text-center">
+                    <b>{{v}}</b>
+                    <i class="pull-right fa fa-trash pointer text-danger" @click="removeGroup(i)"></i></header>
+                <div class="row row-content fzdc_goods">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div class="input-group">
+                            <input type="text" class="form-control" :ref="`attr-item-name-${i}`">
+                            <span class="input-group-addon pointer" @click="addChild(i)">添加</span>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 tag-content">
+                        <span class="tag" v-for="(vv, j) in attrItems[i]">{{vv}} <i
+                                class="fa fa-minus-circle pointer text-danger" @click="removeChild(i, j)"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class=" panel-default fzdc_content_b" v-show="attrGroups.length">
+            <div class="fzdc_content">
+                <table class="table  attr-table">
+                    <thead>
+                    <tr>
+                        <th v-for="(v, i) in attrGroups">
+                            {{v}}
+                        </th>
+                        <th width="140">原价</th>
+                        <th width="140">现价</th>
+                        <th width="140">库存</th>
+                        <th width="140">编码</th>
+                        <th width="80" style="text-align:center;">图片</th>
+                        <th width="80" style="text-align:center;">状态</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr v-for="(v, i) in productSkus" :class="v.status==1?'':'disabled'">
+                        <td v-for="(vv, j) in v.attr" width="80">
+                            {{vv}}
+                        </td>
+                        <td width="80">
+                            <input type="number" name="dsd" class="input-sm form-control attr-market_price"
+                                   v-model="v.market_price">
+                        </td>
+                        <td width="80">
+                            <input type="number" class="input-sm form-control attr-price" v-model="v.price">
+                        </td>
+                        <td width="80">
+                            <input type="number" class="input-sm form-control attr-stock" v-model="v.stock">
+                        </td>
+                        <td width="80">
+                            <input type="text" class="input-sm form-control attr-sn" v-model="v.sn">
+                        </td>
+                        <td width="80" style="text-align:center;">
+                            <div class="sku-img" @click="upimage(i)">
+                                <img v-if="v.image==''" src="/assets/addons/fzdc/img/upload.png" width="30">
+                                <div v-else>
+                                    <img :src="v.image">
+                                    <i class="fa fa-minus-circle text-danger img-trash" @click.stop="delimage(i)"></i>
+                                </div>
+                            </div>
+                        </td>
+                        <td width="80" style="text-align:center;">
+                            <input type="hidden" class="input-sm form-control attr-status" v-model="v.status">
+                            <i v-if="v.status==1" class="fa fa-toggle-on text-success fa-2x" @click="toggle(i,0)"></i>
+                            <i v-else class="fa fa-toggle-off text-gray fa-2x" @click="toggle(i,1)"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td :colspan="attrGroups.length" width="80">批量设置</td>
+                        <td>
+                            <div class="input-group "><input type="number" ref="batch-market_price"
+                                                             class="form-control no-padding text-center"> <span
+                                    @click="batchSetAttrs('market_price')" class="input-group-addon pointer">设置</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="input-group "><input type="number" ref="batch-price"
+                                                             class="form-control no-padding text-center"> <span
+                                    @click="batchSetAttrs('price')" class="input-group-addon pointer">设置</span></div>
+                        </td>
+                        <td>
+                            <div class="input-group"><input type="number" ref="batch-stock"
+                                                            class="form-control no-padding text-center"> <span
+                                    @click="batchSetAttrs('stock')" class="input-group-addon pointer">设置</span></div>
+                        </td>
+                        <td>
+                            <div class="input-group"><input type="text" ref="batch-sn" class="form-control"> <span
+                                    @click="batchSetAttrs('sn')" class="input-group-addon pointer">设置</span></div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="hide">
+                    <input type="text" name="row[skus]" :value="productSkusStr">
+                    <input type="text" name="row[groups]" :value="attrGroupsStr">
+                    <input type="text" name="row[items]" :value="attrItemsStr">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

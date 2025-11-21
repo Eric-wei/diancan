@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="35px" viewBox="0 0 32 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 11备份</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="切图" transform="translate(-177.000000, -1354.000000)" stroke="#181817" stroke-width="2">
+            <g id="编组-11备份" transform="translate(178.000000, 1355.000000)">
+                <g id="编组-10">
+                    <path d="M21.3813079,33 L2.91176471,33 C1.30364146,33 0,31.6963585 0,30.0882353 L0,2.91176471 C0,1.30364146 1.30364146,0 2.91176471,0 L26.2058824,0 C27.8140056,0 29.1176471,1.30364146 29.1176471,2.91176471 L29.1176471,24.3286774 L29.1176471,24.3286774" id="路径"></path>
+                    <path d="M29.357527,23.6794112 C23.5457252,30.1096247 20.6398243,33.3247315 20.6398243,33.3247315" id="路径-54"></path>
+                </g>
+                <line x1="5" y1="7.0026738" x2="22.8640054" y2="7.0026738" id="路径-55" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="5" y1="13.0026738" x2="22.8640054" y2="13.0026738" id="路径-55备份" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="5" y1="20.0026738" x2="16" y2="20" id="路径-55备份-2" stroke-linecap="round" stroke-linejoin="round"></line>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "积分商城",
+  "navigationBarBackgroundColor": "#1DACEE",
+  "navigationBarTextStyle": "white",
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-navbar": "/node-modules/uview-ui/components/u-navbar/u-navbar",
+    "u-tabs": "/node-modules/uview-ui/components/u-tabs/u-tabs",
+    "u-empty": "/node-modules/uview-ui/components/u-empty/u-empty"
+  }
+}

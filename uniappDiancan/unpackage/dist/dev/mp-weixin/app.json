@@ -1,0 +1,154 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/order/order",
+    "pages/order_form/order_form",
+    "pages/me/me",
+    "pages/wallet/wallet",
+    "pages/reserved/reserved"
+  ],
+  "subPackages": [
+    {
+      "root": "pagesB",
+      "pages": [
+        "ageency/ageency",
+        "Commission_order/Commission_order",
+        "my_team/my_team",
+        "Withdrawal_record/Withdrawal_record",
+        "Promotional_poster/Promotional_poster",
+        "explain/explain",
+        "member/member",
+        "merchantOrder/merchantOrder",
+        "expenseCalendar/expenseCalendar"
+      ]
+    },
+    {
+      "root": "pages/scan",
+      "pages": [
+        "peopleOrder/peopleOrder",
+        "orderDetail/orderDetail",
+        "finishOrder/finishOrder",
+        "scanOrder/scanOrder"
+      ]
+    },
+    {
+      "root": "pages/merchant",
+      "pages": [
+        "storeCode/storeCode",
+        "takeout/order",
+        "my/my",
+        "order/order",
+        "orderDetail/orderDetail",
+        "wallet/wallet",
+        "cash/cash",
+        "addCard/addCard",
+        "txdetail/txdetail",
+        "shopInfo/shopInfo",
+        "storeAC/storeAC",
+        "cashID/cashID",
+        "sjreserved/sjreserved",
+        "tableNumber/tableNumber",
+        "manageDrive/manageDrive",
+        "manageStore/manageStore",
+        "manageProduct/manageProduct",
+        "AddMB/Add",
+        "AddMB/class",
+        "AddMB/addClass",
+        "AddMB/List",
+        "AddMB/Producte",
+        "AddMB/producteDetail"
+      ]
+    },
+    {
+      "root": "pages/me_all",
+      "pages": [
+        "coupon/coupon",
+        "coupon_collection/coupon_collection",
+        "personage/personage",
+        "integral/integral",
+        "convert/convert",
+        "orderdetails/orderdetails",
+        "confirm/confirm",
+        "integralcommodity/integralcommodity",
+        "Integraldetail/Integraldetail",
+        "codeqr/codeqr",
+        "messagenotification/messagenotification",
+        "setmessage/setmessage",
+        "binding/binding",
+        "particulars/particulars",
+        "recharge/recharge",
+        "feedback/feedback"
+      ]
+    },
+    {
+      "root": "pages/order_all",
+      "pages": [
+        "affirm_order/affirm_order",
+        "shipping_address/shipping_address",
+        "write_site/write_site",
+        "selectstore/selectstore",
+        "ordersearch/ordersearch",
+        "goodsordersearch/goodsordersearch",
+        "goodsordersearch/goodsordersearch2",
+        "order_details/order_details",
+        "login_protocol/login_protocol"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "backgroundColor": "#FFFFFF",
+    "color": "#AAAAAA",
+    "selectedColor": "#333333",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "./static/tab/tab1.png",
+        "selectedIconPath": "./static/tab/tab1c.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "iconPath": "./static/tab/tab2.png",
+        "selectedIconPath": "./static/tab/tab2c.png",
+        "text": "点餐"
+      },
+      {
+        "pagePath": "pages/order_form/order_form",
+        "iconPath": "./static/tab/tab3.png",
+        "selectedIconPath": "./static/tab/tab3c.png",
+        "text": "订单"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "./static/tab/tab4.png",
+        "selectedIconPath": "./static/tab/tab4c.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "lazyCodeLoading": "requiredComponents",
+  "permission": {
+    "scope.userFuzzyLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    },
+    "scope.userLocation": {
+      "desc": "请打开位置提供以提供更好的服务"
+    },
+    "scope.chooseLocation": {
+      "desc": "请打开位置提供以提供更好的服务"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation",
+    "chooseLocation",
+    "chooseAddress"
+  ],
+  "usingComponents": {}
+}

@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "积分明细",
+  "navigationBarBackgroundColor": "#fff",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-empty": "/node-modules/uview-ui/components/u-empty/u-empty",
+    "uni-calendar": "/uni_modules/uni-calendar/components/uni-calendar/uni-calendar"
+  }
+}

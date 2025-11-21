@@ -1,0 +1,22 @@
+{
+  "navigationBarTitleText": "订单详情",
+  "navigationBarBackgroundColor": "#fff",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "countdown": "/components/countdown/countdown",
+    "orderblock": "/components/orderblock/orderblock",
+    "u-icon": "/node-modules/uview-ui/components/u-icon/u-icon",
+    "storelocation": "/components/storelocation/storelocation",
+    "u-line": "/node-modules/uview-ui/components/u-line/u-line",
+    "expensedetail": "/components/expensedetail/expensedetail",
+    "reserve": "/components/reserve/reserve",
+    "order-information": "/components/OrderInformation/OrderInformation",
+    "distribution": "/components/distribution/distribution",
+    "finish-order": "/components/finishOrder/finishOrder",
+    "reserve2": "/components/reserve2/reserve2",
+    "height": "/components/height/height",
+    "u-modal": "/node-modules/uview-ui/components/u-modal/u-modal",
+    "u--text": "/node-modules/uview-ui/components/u--text/u--text",
+    "paypopup": "/components/paypopup/paypopup"
+  }
+}

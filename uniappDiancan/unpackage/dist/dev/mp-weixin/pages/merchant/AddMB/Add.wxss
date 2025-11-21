@@ -1,0 +1,183 @@
+
+page {
+	background: #f5f5f5;
+}
+
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* uni.scss */
+/* 颜色变量 */
+/* 行为相关颜色 - KFC主题色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.mb50.data-v-5b69e4fa {
+  margin-bottom: 50rpx;
+}
+.mt30.data-v-5b69e4fa {
+  margin-top: 30rpx;
+}
+.mr30.data-v-5b69e4fa {
+  margin-right: 30rpx;
+}
+.spulist.data-v-5b69e4fa {
+  padding: 30rpx;
+  box-sizing: border-box;
+  border-radius: 12rpx;
+  background: #fff;
+  margin-bottom: 30rpx;
+}
+.addTTT_t.data-v-5b69e4fa {
+  margin-right: 10rpx;
+}
+.lAddBut.data-v-5b69e4fa {
+  padding: 10rpx 30rpx;
+  box-sizing: border-box;
+  color: #fff;
+  background: #E40030;
+  border-radius: 8rpx;
+}
+.addresslists.data-v-5b69e4fa {
+  background: #f5f5f5;
+  padding: 50rpx 30rpx 30rpx 30rpx;
+  box-sizing: border-box;
+  border-radius: 12rpx 12rpx 0 0;
+}
+.addresslists .cc.data-v-5b69e4fa {
+  margin-bottom: 30rpx;
+}
+.addresslists .cc .close.data-v-5b69e4fa {
+  font-size: 32rpx;
+  color: #999;
+}
+.addresslists .cc .confirm.data-v-5b69e4fa {
+  font-size: 23rpx;
+  color: #8E97FE;
+}
+.addresslists .addresslists_t.data-v-5b69e4fa {
+  margin-bottom: 30rpx;
+}
+.addresslists .addresslists_tt.data-v-5b69e4fa {
+  font-size: 38rpx;
+}
+.addresslists .addresslists_ttc.data-v-5b69e4fa {
+  font-weight: bold;
+  color: #8E97FE;
+}
+.addresslist.data-v-5b69e4fa {
+  width: 100%;
+  height: 600rpx;
+  box-sizing: border-box;
+  background: #f5f5f5;
+}
+.addresslist .addresslist_li.data-v-5b69e4fa {
+  padding: 30rpx;
+  box-sizing: border-box;
+  border-radius: 8rpx;
+  background: #FFFFFF;
+  margin-bottom: 30rpx;
+}
+.addresslist .addresslist_lic.data-v-5b69e4fa {
+  background: #8E97FE !important;
+  color: #fff !important;
+}
+.bigttll.data-v-5b69e4fa {
+  width: 75px;
+  white-space: nowrap;
+  font-weight: 0 !important;
+  font-size: 28rpx;
+  color: #3D3D3D;
+  margin-right: 20rpx;
+}
+.bcbut.data-v-5b69e4fa {
+  width: 701rpx;
+  height: 81rpx;
+  background: #E40030;
+  border-radius: 8rpx;
+  font-size: 30rpx;
+  color: #FFFFFF;
+  position: fixed;
+  bottom: 60rpx;
+}
+.textarea1.data-v-5b69e4fa {
+  width: 537rpx;
+  padding: 30rpx;
+  border-radius: 14rpx;
+  font-size: 26rpx;
+  color: #232323;
+  background: #fff;
+  border-radius: 18rpx 18rpx 18rpx 18rpx;
+}
+.textarea1B.data-v-5b69e4fa {
+  padding: 30rpx;
+  border-radius: 14rpx;
+  font-size: 26rpx;
+  color: #232323;
+  background: #F9F9F9;
+  border-radius: 18rpx 18rpx 18rpx 18rpx;
+}
+.textarea1c.data-v-5b69e4fa {
+  padding: 20rpx 30rpx;
+  border-radius: 14rpx;
+  font-size: 26rpx;
+  color: #000;
+  background: #F9F9F9;
+  border-radius: 18rpx 18rpx 18rpx 18rpx;
+  margin-left: 20rpx;
+  margin-bottom: 20rpx;
+}
+.textarea3.data-v-5b69e4fa {
+  width: 537rpx;
+  padding: 30rpx;
+  border-radius: 14rpx;
+  font-size: 26rpx;
+  color: #232323;
+  border-radius: 18rpx 18rpx 18rpx 18rpx;
+}
+.textarea2.data-v-5b69e4fa {
+  width: 537rpx;
+  padding: 30rpx;
+  height: 161rpx;
+  border-radius: 14rpx;
+  font-size: 26rpx;
+  color: #232323;
+  background: #F9F9F9;
+  border-radius: 18rpx 18rpx 18rpx 18rpx;
+}
+.bx.data-v-5b69e4fa {
+  padding: 36rpx 30rpx;
+  box-sizing: border-box;
+}
+.bx .inp.data-v-5b69e4fa {
+  width: 100%;
+}
+.bx .choose .chooseicon.data-v-5b69e4fa {
+  width: 36rpx;
+  height: 36rpx;
+}
+.bx .default.data-v-5b69e4fa {
+  font-size: 24rpx;
+  color: #666666;
+  margin-left: 14rpx;
+  margin-right: 20rpx;
+}
+

@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "u-navbar": "/node-modules/uview-ui/components/u-navbar/u-navbar",
+    "u-search": "/node-modules/uview-ui/components/u-search/u-search",
+    "u-tabs": "/node-modules/uview-ui/components/u-tabs/u-tabs",
+    "u-empty": "/node-modules/uview-ui/components/u-empty/u-empty",
+    "expensedetail2": "/components/expensedetail2/expensedetail2",
+    "sjtabbar": "/components/sjtabbar/sjtabbar"
+  }
+}

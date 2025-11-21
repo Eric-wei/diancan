@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>订单</title>
+    <defs>
+        <polygon id="path-1" points="0 0 60 0 60 60 0 60"></polygon>
+    </defs>
+    <g id="餐饮预订商家版" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="订单" transform="translate(-625.000000, -428.000000)">
+            <rect fill="#FAFAFA" x="0" y="0" width="750" height="3086"></rect>
+            <rect id="矩形" fill="#FFFFFF" x="25" y="313" width="700" height="527" rx="10"></rect>
+            <g id="编组-2" transform="translate(625.000000, 428.000000)">
+                <rect id="矩形" fill="#000000" fill-rule="nonzero" opacity="0" x="0" y="0" width="60" height="60"></rect>
+                <g id="编组">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M30,0 C13.44,0 0,13.44 0,30 C0,46.56 13.44,60 30,60 C46.557,60 60,46.56 60,30 C60,13.44 46.557,0 30,0" id="Fill-1" fill="#93DBFF" mask="url(#mask-2)"></path>
+                    <path d="M42.48,44.76 C40.23,47.01 31.8,44.88 23.46,36.54 C15.12,28.2 12.99,19.77 15.24,17.52 C17.19,15.57 19.59,12.12 23.16,16.59 C26.76,21.06 24.99,22.29 22.95,24.33 C21.57,25.74 24.51,29.31 27.6,32.4 C30.69,35.49 34.26,38.43 35.667,37.02 C37.71,35.01 38.94,33.24 43.41,36.81 C47.88,40.41 44.46,42.81 42.48,44.76" id="路径" fill="#00ABFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

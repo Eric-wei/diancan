@@ -1,0 +1,759 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/order/order",
+			"style": {
+				"navigationBarTitleText": "点餐",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/order_form/order_form",
+			"style": {
+				"navigationBarTitleText": "订单",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/me/me",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/wallet/wallet",
+			"style": {
+				"navigationBarTitleText": "充值",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/reserved/reserved",
+			"style": {
+				"navigationBarTitleText": "预约",
+				"enablePullDownRefresh": false
+			}
+		}
+
+	],
+	"subPackages": [{
+			"root": "pagesB",
+			"pages": [{
+					"path": "ageency/ageency",
+					"style": {
+						"navigationBarTitleText": "推广中心",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "Commission_order/Commission_order",
+					"style": {
+						"navigationBarTitleText": "佣金记录",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "my_team/my_team",
+					"style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false,
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "Withdrawal_record/Withdrawal_record",
+					"style": {
+						"navigationBarTitleText": "提现记录",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "Promotional_poster/Promotional_poster",
+					"style": {
+						"navigationBarTitleText": "推广海报",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "explain/explain",
+					"style": {
+						"navigationBarTitleText": "规则说明",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "member/member",
+					"style": {
+						"navigationBarTitleText": "成员",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "merchantOrder/merchantOrder",
+					"style": {
+						"navigationBarTitleText": "点餐",
+						"enablePullDownRefresh": false,
+						"navigationBarBackgroundColor": "#fff"
+					}
+				},
+				{
+					"path": "expenseCalendar/expenseCalendar",
+					"style": {
+						"navigationBarTitleText": "消费记录",
+						"enablePullDownRefresh": false
+					}
+				}
+
+			]
+		}, {
+			"root": "pages/scan",
+			"pages": [{
+					"path": "peopleOrder/peopleOrder",
+					"style": {
+						"navigationBarTitleText": "确认订单",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "orderDetail/orderDetail",
+					"style": {
+						"navigationBarTitleText": "订单详情",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "finishOrder/finishOrder",
+					"style": {
+						"navigationBarTitleText": "订单详情",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "scanOrder/scanOrder",
+					"style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false,
+						"navigationStyle": "custom"
+					}
+				}
+			]
+		}, {
+			"root": "pages/merchant",
+			"pages": [
+				// {
+				// 	"path": "index/index",
+				// 	"style": {
+				// 		"navigationBarTitleText": "商家中心",
+				// 		"enablePullDownRefresh": false,
+				// 		"navigationStyle": "custom"
+				// 	}
+				// },
+				{
+					"path": "storeCode/storeCode",
+					"style": {
+						"navigationBarTitleText": "店铺码",
+						"enablePullDownRefresh": false,
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "takeout/order",
+					"style": {
+						"navigationBarTitleText": "外卖订单",
+						"enablePullDownRefresh": false,
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "my/my",
+					"style": {
+						"navigationBarTitleText": "我的",
+						"enablePullDownRefresh": false,
+						"navigationStyle": "custom"
+					}
+				}, {
+					"path": "order/order",
+					"style": {
+						"navigationBarTitleText": "订单列表",
+						"enablePullDownRefresh": false,
+						"navigationStyle": "custom"
+					}
+
+				}, {
+					"path": "orderDetail/orderDetail",
+					"style": {
+						"navigationBarTitleText": "订单详情",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "wallet/wallet",
+					"style": {
+						"navigationBarTitleText": "我的钱包",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "cash/cash",
+					"style": {
+						"navigationBarTitleText": "提现",
+						"enablePullDownRefresh": false
+					}
+				}, {
+					"path": "addCard/addCard",
+					"style": {
+						"navigationBarTitleText": "添加提现方式",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "txdetail/txdetail",
+					"style": {
+						"navigationBarTitleText": "提现明细",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "shopInfo/shopInfo",
+					"style": {
+						"navigationBarTitleText": "店铺资料",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "storeAC/storeAC",
+					"style": {
+						"navigationBarTitleText": "店铺认证",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "cashID/cashID",
+					"style": {
+						"navigationBarTitleText": "提现账号",
+						"enablePullDownRefresh": false
+					}
+
+				},
+				{
+					"path": "sjreserved/sjreserved",
+					"style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false,
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "tableNumber/tableNumber",
+					"style": {
+						"navigationBarTitleText": "点餐",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "manageDrive/manageDrive",
+					"meta": {
+						"auth": false, //需要登录
+						"async": true, //是否同步
+						"title": "点餐", //标题
+						"group": "配送管理" //分组
+					},
+					"style": {
+						"navigationBarTitleText": "配送管理",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "manageStore/manageStore",
+					"meta": {
+						"auth": false, //需要登录
+						"async": true, //是否同步
+						"title": "点餐", //标题
+						"group": "店铺管理" //分组
+					},
+					"style": {
+						"navigationBarTitleText": "店铺管理",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+				},
+
+				{
+					"path": "manageProduct/manageProduct",
+					"meta": {
+						"auth": false, //需要登录
+						"async": true, //是否同步
+						"title": "点餐", //标题
+						"group": "商品管理" //分组
+					},
+					"style": {
+						"navigationBarTitleText": "商品管理",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "AddMB/Add",
+					"meta": {
+						"auth": false, //需要登录
+						"async": true, //是否同步
+						"title": "点餐", //标题
+						"group": "规格设置" //分组
+					},
+					"style": {
+						"navigationBarTitleText": "规格设置",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "AddMB/class",
+					"meta": {
+						"auth": false, //需要登录
+						"async": true, //是否同步
+						"title": "点餐", //标题
+						"group": "分类列表" //分组
+					},
+					"style": {
+						"navigationBarTitleText": "分类列表",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "AddMB/addClass",
+					"meta": {
+						"auth": false, //需要登录
+						"async": true, //是否同步
+						"title": "点餐", //标题
+						"group": "新增分类" //分组
+					},
+					"style": {
+						"navigationBarTitleText": "新增设置",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "AddMB/List",
+					"meta": {
+						"auth": false, //需要登录
+						"async": true, //是否同步
+						"title": "点餐", //标题
+						"group": "规格模板" //分组
+					},
+					"style": {
+						"navigationBarTitleText": "规格模板",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "AddMB/Producte",
+					"meta": {
+						"auth": false, //需要登录
+						"async": true, //是否同步
+						"title": "点餐", //标题
+						"group": "新增商品" //分组
+					},
+					"style": {
+						"navigationBarTitleText": "新增商品",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "AddMB/producteDetail",
+					"meta": {
+						"auth": false, //需要登录
+						"async": true, //是否同步
+						"title": "点餐", //标题
+						"group": "商品详情" //分组
+					},
+					"style": {
+						"navigationBarTitleText": "商品详情",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+				}
+			]
+		}, {
+			"root": "pages/me_all",
+			"pages": [{
+					"path": "coupon/coupon",
+					"meta": {
+						"auth": true, //需要登录
+						"async": true, //是否同步
+						"title": "我的", //标题
+						"group": "我的优惠劵" //分组
+					},
+					"style": {
+						"navigationBarTitleText": "我的优惠劵",
+						"enablePullDownRefresh": false,
+						"navigationBarBackgroundColor": "#fff"
+					}
+				},
+				{
+					"path": "coupon_collection/coupon_collection",
+					"meta": {
+						"auth": true, //需要登录
+						"async": true, //是否同步
+						"title": "我的", //标题
+						"group": "领取优惠劵" //分组
+					},
+					"style": {
+						"navigationBarTitleText": "领取优惠劵",
+						"enablePullDownRefresh": false,
+						"navigationBarBackgroundColor": "#fff",
+						"navigationStyle": "custom"
+					}
+				}, {
+					"path": "personage/personage",
+					"meta": {
+						"auth": true, //需要登录
+						"async": true, //是否同步
+						"title": "我的", //标题
+						"group": "个人资料" //分组
+					},
+					"style": {
+						"navigationBarTitleText": "个人资料",
+						"enablePullDownRefresh": false,
+						"navigationBarBackgroundColor": "#fff"
+					}
+
+				}, {
+					"path": "integral/integral",
+					"meta": {
+						"auth": true, //需要登录
+						"async": true, //是否同步
+						"title": "我的", //标题
+						"group": "积分商城" //分组
+					},
+					"style": {
+						"navigationBarTitleText": "积分商城",
+						"navigationBarBackgroundColor": "#1DACEE",
+						"navigationBarTextStyle": "white", // 状态栏字体为白色，只能为 white-白色，black-黑色 二选一
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "convert/convert",
+					"meta": {
+						"auth": true, //需要登录
+						"async": true, //是否同步
+						"title": "我的", //标题
+						"group": "兑换记录" //分组
+					},
+					"style": {
+						"navigationBarTitleText": "兑换记录",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "orderdetails/orderdetails",
+					"meta": {
+						"auth": true, //需要登录
+						"async": true, //是否同步
+						"title": "我的", //标题
+						"group": "订单详情" //分组
+					},
+					"style": {
+						"navigationBarTitleText": "订单详情",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "confirm/confirm",
+					"meta": {
+						"auth": true, //需要登录
+						"async": true, //是否同步
+						"title": "我的", //标题
+						"group": "确认订单" //分组
+					},
+					"style": {
+						"navigationBarTitleText": "确认订单",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "integralcommodity/integralcommodity",
+					"meta": {
+						"auth": true, //需要登录
+						"async": true, //是否同步
+						"title": "我的", //标题
+						"group": "商品详情" //分组
+					},
+					"style": {
+						"navigationBarTitleText": "商品详情",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "Integraldetail/Integraldetail",
+					"meta": {
+						"auth": true, //需要登录
+						"async": true, //是否同步
+						"title": "我的", //标题
+						"group": "积分明细" //分组
+					},
+					"style": {
+						"navigationBarTitleText": "积分明细",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "codeqr/codeqr",
+					"meta": {
+						"auth": true, //需要登录
+						"async": true, //是否同步
+						"title": "我的", //标题
+						"group": "会员码" //分组
+					},
+					"style": {
+						"navigationBarTitleText": "会员码",
+						"navigationStyle": "custom",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "messagenotification/messagenotification",
+					"meta": {
+						"auth": true, //需要登录
+						"async": true, //是否同步
+						"title": "我的", //标题
+						"group": "消息通知" //分组
+					},
+					"style": {
+						"navigationBarTitleText": "消息通知",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "setmessage/setmessage",
+					"style": {
+						"navigationBarTitleText": "设置",
+						"enablePullDownRefresh": false,
+						"navigationBarBackgroundColor": "#fff"
+					}
+
+				}, {
+					"path": "binding/binding",
+					"style": {
+						"navigationBarTitleText": "第三方账号绑定",
+						"enablePullDownRefresh": false,
+						"navigationBarBackgroundColor": "#fff"
+					}
+
+				}, {
+					"path": "particulars/particulars",
+					"style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+
+				},
+				{
+					"path": "recharge/recharge",
+					"style": {
+						"navigationBarTitleText": "充值记录",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "feedback/feedback",
+					"style": {
+						"navigationBarTitleText": "意见反馈",
+						"enablePullDownRefresh": false
+					}
+				}
+			]
+		},
+		{
+			"root": "pages/order_all",
+			"pages": [{
+					"path": "affirm_order/affirm_order",
+					"meta": {
+						"auth": true, //需要登录
+						"async": true, //是否同步
+						"title": "点餐", //标题
+						"group": "确认订单" //分组
+					},
+					"style": {
+						"navigationBarTitleText": "确认订单",
+						"navigationBarBackgroundColor": "#fff",
+						"navigationStyle": "custom"
+					}
+				}, {
+					"path": "shipping_address/shipping_address",
+					"meta": {
+						"auth": true, //需要登录
+						"async": true, //是否同步
+						"title": "点餐", //标题
+						"group": "收货地址" //分组
+					},
+					"style": {
+						"navigationBarTitleText": "收货地址",
+						"enablePullDownRefresh": false,
+						"navigationBarBackgroundColor": "#fff"
+
+					}
+
+				}, {
+					"path": "write_site/write_site",
+					"meta": {
+						"auth": true, //需要登录
+						"async": true, //是否同步
+						"title": "点餐", //标题
+						"group": "收货地址" //分组
+					},
+					"style": {
+						"navigationBarTitleText": "收货地址",
+						"enablePullDownRefresh": false,
+						"navigationBarBackgroundColor": "#fff"
+					}
+
+				}, {
+					"path": "selectstore/selectstore",
+					"meta": {
+						"auth": true, //需要登录
+						"async": true, //是否同步
+						"title": "点餐", //标题
+						"group": "选择门店" //分组
+					},
+					"style": {
+						"navigationBarTitleText": "选择门店",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "ordersearch/ordersearch",
+					"meta": {
+						"auth": true, //需要登录
+						"async": true, //是否同步
+						"title": "点餐", //标题
+						"group": "商品搜索" //分组
+					},
+					"style": {
+						"navigationBarTitleText": "商品搜索",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "goodsordersearch/goodsordersearch",
+					"meta": {
+						"auth": true, //需要登录
+						"async": true, //是否同步
+						"title": "点餐", //标题
+						"group": "商品详情" //分组
+					},
+					"style": {
+						"navigationBarTitleText": "商品详情",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "goodsordersearch/goodsordersearch2",
+					"meta": {
+						"auth": true, //需要登录
+						"async": true //是否同步
+					},
+					"style": {
+						"navigationBarTitleText": "预约详情",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "order_details/order_details",
+					"meta": {
+						"auth": true, //需要登录
+						"async": true, //是否同步
+						"title": "点餐", //标题
+						"group": "订单详情" //分组
+					},
+					"style": {
+						"navigationBarTitleText": "订单详情",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "login_protocol/login_protocol",
+					"meta": {
+						"auth": false, //需要登录
+						"async": true, //是否同步
+						"title": "点餐", //标题
+						"group": "协议" //分组
+					},
+					"style": {
+						"navigationBarTitleText": "协议",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+
+				}
+
+			]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"borderStyle": "white",
+		"backgroundColor": "#FFFFFF",
+		"color": "#AAAAAA",
+		"selectedColor": "#333333",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "./static/tab/tab1.png",
+				"selectedIconPath": "./static/tab/tab1c.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/order/order",
+				"iconPath": "./static/tab/tab2.png",
+				"selectedIconPath": "./static/tab/tab2c.png",
+				"text": "点餐"
+			},
+			{
+				"pagePath": "pages/order_form/order_form",
+				"iconPath": "./static/tab/tab3.png",
+				"selectedIconPath": "./static/tab/tab3c.png",
+				"text": "订单"
+			},
+			{
+				"pagePath": "pages/me/me",
+				"iconPath": "./static/tab/tab4.png",
+				"selectedIconPath": "./static/tab/tab4c.png",
+				"text": "我的"
+			}
+		]
+	}
+}

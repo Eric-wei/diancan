@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="33px" viewBox="0 0 40 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 2备份 2</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="切图" transform="translate(-345.000000, -870.000000)" stroke="#333333">
+            <g id="编组-2备份-2" transform="translate(345.000000, 870.000000)">
+                <rect id="矩形" fill="#D8D8D8" x="13.5" y="24.5" width="8" height="1"></rect>
+                <path d="M39,15 L39,25 L21.044843,25 C21.2826172,22.361431 22.452122,19.9915289 24.2218254,18.2218254 C26.2124339,16.2312169 28.9624339,15 32,15 L32,15 L39,15 Z" id="矩形" stroke-width="2"></path>
+                <rect id="矩形" x="6.5" y="0.5" width="8" height="1"></rect>
+                <rect id="矩形" stroke-width="2" x="25" y="2" width="12" height="9" rx="3"></rect>
+                <path d="M3.01204427,22.069566 C3.78908976,10.6354951 6.10498101,4.91845964 9.959718,4.91845964 C11.4786987,4.91845964 14.0931592,5.08382793 14.0931592,14 C14.0931592,14.8003562 14.1113117,20.5003466 22.5556559,20" id="路径-32" stroke-width="2"></path>
+                <circle id="椭圆形备份" stroke-width="2" fill="#FFFFFF" cx="33" cy="26" r="6"></circle>
+                <circle id="椭圆形" stroke-width="2" fill="#FFFFFF" cx="7" cy="25" r="6"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

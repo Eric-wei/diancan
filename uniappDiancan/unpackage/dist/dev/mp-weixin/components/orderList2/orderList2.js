@@ -1,0 +1,11 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["components/orderList2/orderList2"],{929:function(n,e,t){"use strict";t.r(e);var r=t(930),i=t(932);for(var u in i)["default"].indexOf(u)<0&&function(n){t.d(e,n,(function(){return i[n]}))}(u);t(934);var c,o=t(42),d=Object(o["default"])(i["default"],r["render"],r["staticRenderFns"],!1,null,null,null,!1,r["components"],c);d.options.__file="components/orderList2/orderList2.vue",e["default"]=d.exports},930:function(n,e,t){"use strict";t.r(e);var r=t(931);t.d(e,"render",(function(){return r["render"]})),t.d(e,"staticRenderFns",(function(){return r["staticRenderFns"]})),t.d(e,"recyclableRender",(function(){return r["recyclableRender"]})),t.d(e,"components",(function(){return r["components"]}))},931:function(n,e,t){"use strict";var r;t.r(e),t.d(e,"render",(function(){return i})),t.d(e,"staticRenderFns",(function(){return c})),t.d(e,"recyclableRender",(function(){return u})),t.d(e,"components",(function(){return r}));var i=function(){var n=this,e=n.$createElement;n._self._c},u=!1,c=[];i._withStripped=!0},932:function(n,e,t){"use strict";t.r(e);var r=t(933),i=t.n(r);for(var u in r)["default"].indexOf(u)<0&&function(n){t.d(e,n,(function(){return r[n]}))}(u);e["default"]=i.a},933:function(n,e,t){"use strict";Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var r={name:"orderlist",props:{content:{type:Array,default:[],required:!0},index:{type:Number}},data:function(){return{select_index:0}},watch:{index:function(n,e){this.select_index=0}},methods:{select:function(n,e){this.select_index=n,this.$emit("aid_mgs",e,n)}}};e.default=r},934:function(n,e,t){"use strict";t.r(e);var r=t(935),i=t.n(r);for(var u in r)["default"].indexOf(u)<0&&function(n){t.d(e,n,(function(){return r[n]}))}(u);e["default"]=i.a},935:function(n,e,t){}}]);
+//# sourceMappingURL=../../../.sourcemap/mp-weixin/components/orderList2/orderList2.js.map
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'components/orderList2/orderList2-create-component',
+    {
+        'components/orderList2/orderList2-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('2')['createComponent'](__webpack_require__(929))
+        })
+    },
+    [['components/orderList2/orderList2-create-component']]
+]);

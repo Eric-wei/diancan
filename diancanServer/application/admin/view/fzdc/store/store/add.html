@@ -1,0 +1,255 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Title')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-title" class="form-control" name="row[title]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('别名')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-alias_title" class="form-control" name="row[alias_title]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('简介')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-desc" class="form-control" name="row[desc]" type="text" value="">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Address')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input type="hidden" class="form-control" name="row[lon]" id="lng" placeholder="经度">
+            <input type="hidden" class="form-control" name="row[lat]" id="lat" placeholder="纬度">
+            <!--            <input type="text" hidden class="form-control" name="row[address]"  placeholder="地址">-->
+            <input id="address" class="form-control address" data-rule="required" name="row[address]" type="text"
+                   value="">
+            <button type="button" class="btn btn-primary" data-toggle="addresspicker" data-input-id="address"
+                    data-lng-id="lng" data-lat-id="lat">点击选择地址
+            </button>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('联系人')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-contacts" class="form-control" name="row[contacts]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Tel')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-tel" class="form-control" name="row[tel]" type="text" value="">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Image')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-image" class="form-control" size="50" name="row[image]" type="text" value="">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="faupload-image" class="btn btn-danger faupload"
+                                  data-input-id="c-image"
+                                  data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp,image/webp"
+                                  data-multiple="false" data-preview-id="p-image"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-image" class="btn btn-primary fachoose"
+                                  data-input-id="c-image" data-mimetype="image/*" data-multiple="false"><i
+                            class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-image"></span>
+            </div>
+            <ul class="row list-inline faupload-preview" id="p-image"></ul>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('图片跳转地址')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-tz_url" class="form-control" name="row[tz_url]" type="text" placeholder="/pages/index/index">
+                <div class="input-group-btn">
+                    <a href="javascript:" class="btn btn-info btn-select-page">选择</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--    <div class="form-group">-->
+<!--        <label class="control-label col-xs-12 col-sm-2">{:__('Images')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-8">-->
+<!--            <div class="input-group">-->
+<!--                <input id="c-images" class="form-control" size="50" name="row[images]" type="text" value="">-->
+<!--                <div class="input-group-addon no-border no-padding">-->
+<!--                    <span><button type="button" id="faupload-images" class="btn btn-danger faupload"-->
+<!--                                  data-input-id="c-images"-->
+<!--                                  data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp,image/webp"-->
+<!--                                  data-multiple="true" data-preview-id="p-images"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>-->
+<!--                    <span><button type="button" id="fachoose-images" class="btn btn-primary fachoose"-->
+<!--                                  data-input-id="c-images" data-mimetype="image/*" data-multiple="true"><i-->
+<!--                            class="fa fa-list"></i> {:__('Choose')}</button></span>-->
+<!--                </div>-->
+<!--                <span class="msg-box n-right" for="c-images"></span>-->
+<!--            </div>-->
+<!--            <ul class="row list-inline faupload-preview" id="p-images"></ul>-->
+<!--        </div>-->
+<!--    </div>-->
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Start_times')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-start_times" class="form-control datetimepicker" data-date-format="HH:mm:ss"
+                   data-use-current="true" name="row[start_times]" type="text" value="{:date('H:i:s')}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('End_times')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-end_times" class="form-control datetimepicker" data-date-format="HH:mm:ss"
+                   data-use-current="true" name="row[end_times]" type="text" value="{:date('H:i:s')}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('外卖超时赔付')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-content" class="form-control editor" rows="5" name="row[content]" cols="50"></textarea>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('营业开关')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <input id="c-trade_switch" name="row[trade_switch]" type="hidden" value="0">
+            <a href="javascript:;" data-toggle="switcher" class="btn-switcher" data-input-id="c-trade_switch"
+               data-yes="1" data-no="0">
+                <i class="fa fa-toggle-on text-success fa-flip-horizontal text-gray fa-2x"></i>
+            </a>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('自动接单')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <input id="c-auto_order" name="row[auto_order]" type="hidden" value="0">
+            <a href="javascript:;" data-toggle="switcher" class="btn-switcher" data-input-id="c-auto_order"
+               data-yes="1" data-no="0">
+                <i class="fa fa-toggle-on text-success fa-flip-horizontal text-gray fa-2x"></i>
+            </a>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Delivery_switch')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <input id="c-delivery_switch" name="row[delivery_switch]" type="hidden" value="0">
+            <a href="javascript:;" data-toggle="switcher" class="btn-switcher" data-input-id="c-delivery_switch"
+               data-yes="1" data-no="0">
+                <i class="fa fa-toggle-on text-success fa-flip-horizontal text-gray fa-2x"></i>
+            </a>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Takeaway_switch')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <input id="c-takeaway_switch" name="row[takeaway_switch]" type="hidden" value="0">
+            <a href="javascript:;" data-toggle="switcher" class="btn-switcher" data-input-id="c-takeaway_switch"
+               data-yes="1" data-no="0">
+                <i class="fa fa-toggle-on text-success fa-flip-horizontal text-gray fa-2x"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('是否收取餐位费')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <input id="c-iscwf" name="row[iscwf]" type="hidden" value="0">
+            <a href="javascript:;" data-toggle="switcher" class="btn-switcher" data-input-id="c-iscwf"
+               data-yes="1" data-no="0">
+                <i class="fa fa-toggle-on text-success fa-flip-horizontal text-gray fa-2x"></i>
+            </a>
+        </div>
+    </div>
+    <div class="form-group" data-favisible="iscwf=1">
+        <label class="control-label col-xs-12 col-sm-2">{:__('餐位费金额')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-cwf" class="form-control" name="row[cwf]" type="text" value="0">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Weigh')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-weigh" class="form-control" name="row[weigh]" type="text" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('打印机SN')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-print_sn" data-source="fzdc/prin/prin/index" data-field="title" class="form-control selectpage"
+                   name="row[print_sn]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('预约定金')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-deposit" class="form-control" name="row[deposit]" type="number" value="0.00">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('配送费')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-ps_price" class="form-control" name="row[ps_price]" type="number" value="0.00">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('打包费')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-db_price" class="form-control" name="row[db_price]" type="number" value="0.00">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('起送价')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-qs_price" class="form-control" name="row[qs_price]" type="number" value="0.00">
+        </div>
+    </div>
+<!--    <div class="form-group">-->
+<!--        <label class="control-label col-xs-12 col-sm-2">{:__('配送方式')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-8">-->
+<!--            {:build_radios('row[ps_type]', ['1'=>__('平台配送'), '2'=>__('商家配送')])}-->
+<!--        </div>-->
+<!--    </div>-->
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('服务半径(km)')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-radius" class="form-control" name="row[radius]" type="number" value="0.00">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('State')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <div class="radio">
+                {foreach name="stateList" item="vo"}
+                <label for="row[state]-{$key|htmlentities}"><input id="row[state]-{$key|htmlentities}" name="row[state]" type="radio"
+                                                      value="{$key|htmlentities}" {in name="key" value="1" }checked{/in} />
+                    {$vo|htmlentities}</label>
+                {/foreach}
+            </div>
+
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-primary btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

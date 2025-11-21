@@ -1,0 +1,19 @@
+{
+  "navigationBarTitleText": "订单",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "u-sticky": "/node-modules/uview-ui/components/u-sticky/u-sticky",
+    "u-tabs": "/node-modules/uview-ui/components/u-tabs/u-tabs",
+    "u-empty": "/node-modules/uview-ui/components/u-empty/u-empty",
+    "u-icon": "/node-modules/uview-ui/components/u-icon/u-icon",
+    "expensedetail": "/components/expensedetail/expensedetail",
+    "expensedetail2": "/components/expensedetail2/expensedetail2",
+    "empty-page": "/components/emptyPage/emptyPage",
+    "login": "/components/login/login",
+    "uni-calendar": "/uni_modules/uni-calendar/components/uni-calendar/uni-calendar",
+    "u-action-sheet": "/node-modules/uview-ui/components/u-action-sheet/u-action-sheet",
+    "u-modal": "/node-modules/uview-ui/components/u-modal/u-modal",
+    "paypopup": "/components/paypopup/paypopup"
+  }
+}

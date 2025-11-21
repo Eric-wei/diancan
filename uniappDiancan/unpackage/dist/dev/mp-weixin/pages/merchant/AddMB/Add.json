@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "规格设置",
+  "navigationBarBackgroundColor": "#fff",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-radio-group": "/node-modules/uview-ui/components/u-radio-group/u-radio-group",
+    "u-radio": "/node-modules/uview-ui/components/u-radio/u-radio",
+    "u-icon": "/node-modules/uview-ui/components/u-icon/u-icon"
+  }
+}

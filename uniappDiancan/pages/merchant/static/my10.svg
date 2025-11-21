@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="700px" height="300px" viewBox="0 0 700 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>我的</title>
+    <defs>
+        <linearGradient x1="4.77048956e-16%" y1="40.8163265%" x2="95.1949419%" y2="59.1836735%" id="linearGradient-1">
+            <stop stop-color="#00ADFF" offset="0%"></stop>
+            <stop stop-color="#1072FF" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="700" height="300" rx="10"></rect>
+    </defs>
+    <g id="餐饮预订商家版" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="我的" transform="translate(-25.000000, -136.000000)">
+            <rect fill="#FAFAFA" x="0" y="0" width="750" height="1432"></rect>
+            <g id="椭圆形-+-椭圆形备份-+-椭圆形备份-2蒙版备份" transform="translate(25.000000, 136.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="蒙版" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                <circle id="椭圆形备份" fill="#259EFF" mask="url(#mask-3)" cx="366" cy="17" r="83"></circle>
+                <circle id="椭圆形" fill-opacity="0.408216783" fill="#25A9FF" mask="url(#mask-3)" cx="136" cy="113.5" r="199"></circle>
+                <circle id="椭圆形备份-2" fill-opacity="0.110440341" fill="#5C54FF" mask="url(#mask-3)" cx="607.5" cy="207.5" r="117.5"></circle>
+            </g>
+            <circle id="椭圆形" cx="127" cy="235" r="62"></circle>
+            <rect id="矩形" x="219" y="307" width="114" height="44" rx="4"></rect>
+            <rect id="矩形备份-3" x="348" y="307" width="114" height="44" rx="4"></rect>
+        </g>
+    </g>
+</svg>

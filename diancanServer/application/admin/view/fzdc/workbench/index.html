@@ -1,0 +1,114 @@
+
+<body class="inside-header inside-aside ">
+<div id="main" role="main">
+    <div class="tab-content tab-addtabs">
+        <div id="content">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="content">
+                        <link href="/assets/addons/fzdc/css/admin.css" rel="stylesheet">
+                        <div class="workbench">
+                            <div class="btn-refresh hidden" id="resetecharts"></div>
+                            <div class="stores">
+                                <div class="select-shop">
+                                    <div class="b-tit">选择门店:</div>
+                                    <div class="b-cont">
+                                        <input id="c-shop_id"  data-source="fzdc/store/store/index"
+                                               class="form-control selectpage" data-field="title"  name="shop_id" type="text" value="{$default_store.id|htmlentities}">
+                                    </div>
+                                </div>
+                            </div>
+                            <audio id="bgMusic" controls src="" style="display:none;"></audio>
+                            <div id="app" v-cloak>
+                                <div class="page-header">
+                                    <div class="b-title">最近下单数据</div>
+                                    <div class="b-note">展示最近的8个订单</div>
+                                </div>
+                                <div class="row" v-if="hasLoad.recent">
+                                    <div class="col-xs-12 col-sm-3" v-for="(item, index) in recentList" :key="index" v-if="recentList.length > 0">
+                                        <div class="panel panel-default order-info" :class="'f-'+item.status">
+                                            <div class="b-head">
+                                                <div class="s-order-no">订单: {{item.order_no}}</div>
+                                            </div>
+                                            <div class="b-main">
+                                                <div class="s-method">
+                                                    {{item.order_type_texts}}
+                                                    <span v-if="item.code">
+                                                        ({{item.code}})
+                                                    </span>
+
+                                                </div>
+                                                <div class="s-info" v-if="item.enjoy_type == 'meat'">桌位号：{{item.desk_number}}</div>
+                                                <div class="s-info" v-if="item.enjoy_type == 'pack'">预留电话：{{item.subscribe_tel}}</div>
+                                                <div class="s-name" v-if="item.goods_list.length == 1">{{item.goods_list[0].goods_name}} x {{item.goods_list[0].goods_count}}份 </div>
+                                                <div class="s-name" v-else>多份订单，请查看详情</div>
+                                                <div class="s-note" v-if="item.remark != ''">备注：{{item.remark}}</div>
+                                                <div class="b-more">
+                                                    <div class="fa fa-external-link btn-dialog" :href="'fzdc/order/order/detail/ids/'+item.id"
+                                                         data-area="[&quot;90%&quot;,&quot;90%&quot;]" title="订单详情"></div>
+                                                </div>
+                                            </div>
+                                            <div class="b-info" v-if="item.pay_time != ''" data-toggle="tooltip" data-placement="bottom" data-trigger="hover" title="">
+                                                <div class="s-last">支付时间: {{item.pay_time}}</div>
+                                            </div>
+                                            <div class="b-info" v-if="item.createtime != '' && item.pay_time == ''" data-toggle="tooltip" data-placement="bottom" data-trigger="hover" title="">
+                                                <div class="s-last">创建时间: {{item.createtime}}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="empty" v-if="recentList.length === 0">暂无数据</div>
+                                </div>
+                                <div class="loading" v-else>加载中</div>
+                                <div class="page-header">
+                                    <div class="b-title">全部桌号数据</div>
+                                    <div class="b-note">桌号状态</div>
+                                </div>
+                                <div class="row">
+                                    <input type="hidden" id="c-group" value="all">
+                                    <div class="filter-box">
+                                        <div class="b-item f-active" data-value="all">全部</div>
+                                        <div class="b-item" data-value="1">空闲中</div>
+                                        <div class="b-item" data-value="2">就餐中</div>
+<!--                                        <div class="b-item" data-value="3">打扫中</div>-->
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-top:20px;" v-if="hasLoad.allDesk">
+                                    <div class="col-xs-6 col-sm-2" v-for="(item, index) in deskList" :key="index" v-if="deskList.length > 0">
+                                        <div class="panel panel-default desk-info" :class="'f-'+item.use_status">
+                                            <div class="b-main">
+                                                <div class="s-name">{{item.title}}</div>
+                                                <div class="desk-id" hidden>{{item.id}}</div>
+                                                <div class="s-state">{{item.use_status_text}}</div>
+                                            </div>
+                                            <div class="b-info" v-if="item.use_status!=1" data-toggle="tooltip" data-placement="bottom" data-trigger="hover" title="">
+                                                <div class="s-last">
+                                                    <button class="btn btn-xs btn-success changeDeskStatus" :data-id="item.id" >已完成</button>
+                                                </div>
+                                            </div>
+                                            <div class="b-info" v-if="item.use_status==1" data-toggle="tooltip" data-placement="bottom" data-trigger="hover" title="">
+                                                <div class="s-last"></div>
+                                            </div>
+                                            <div class="b-more">
+                                                <div class="fa fa-list-alt btn-dialog" :href="'fzdc/order/order/index?seat_id='+item.id+'&store_id='+item.store_id"
+                                                     data-area="[&quot;90%&quot;,&quot;90%&quot;]" :title="item.title+'的订单'"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="empty" v-if="deskList.length === 0">暂无数据</div>
+                                </div>
+                                <div class="loading" v-else>加载中</div>
+                            </div>
+                        </div>
+
+                        <style>
+                            [v-cloak] {
+                                display: none !important;
+                            }
+                        </style>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/assets/js/require.min.js" data-main="/assets/js/require-backend.min.js?v=1.0.8"></script>

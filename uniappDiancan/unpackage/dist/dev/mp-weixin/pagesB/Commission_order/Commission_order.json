@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "佣金记录",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-sticky": "/node-modules/uview-ui/components/u-sticky/u-sticky",
+    "empty-page": "/components/emptyPage/emptyPage",
+    "uni-calendar": "/uni_modules/uni-calendar/components/uni-calendar/uni-calendar"
+  }
+}

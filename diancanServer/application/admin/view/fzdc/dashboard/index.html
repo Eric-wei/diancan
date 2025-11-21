@@ -1,0 +1,276 @@
+<style type="text/css">
+    .bg-card-1 {
+        background: linear-gradient(-125deg, #22dcfd, #5865b9);
+        color: #ffffff;
+    }
+
+    .bg-card-2 {
+        background: linear-gradient(-125deg, #ed3b4b, #4c3b92);
+        color: #ffffff;
+    }
+
+    .bg-card-3 {
+        background: linear-gradient(-113deg, #ffab96, #ff0f47);
+        color: #ffffff;
+    }
+
+    .bg-card-4 {
+        background: linear-gradient(-141deg, #fbd6e3, #a9ede9);
+        color: #ffffff;
+    }
+
+    .fzdccard .small-box, .panel {
+        border-radius: 10px;
+    }
+
+    .fzdccard .small-box > .inner {
+        padding: 15px 22px;
+    }
+
+    .fzdccard .small-box > .inner p:last-child {
+        font-size: 12px;
+    }
+
+    .fzdccard .small-box p {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    .fzdccard .small-box h3 {
+        font-weight: 100;
+    }
+
+    .fzdccard .small-box .icon {
+        color: rgba(255, 255, 255, 0.16);
+        right: 22px;
+    }
+
+    .small-box .icon {
+        font-size: 80px;
+    }
+
+    .panel-statistics h3 {
+        font-weight: 500;
+        font-size: 14px;
+        color: #333;
+        margin-top: 9.2px;
+    }
+
+    .panel-statistics h4 {
+        color: #666;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .panel-btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -9px;
+    }
+
+    .fzdcllist .panel-statistics h4 {
+        color: #555;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .fzdcllist .panel-statistics thead {
+        color: #777777;
+    }
+
+    .vertical {
+        vertical-align: middle;
+    }
+
+    .table > thead > tr > th,
+    .table > thead > tr > td,
+    .table > tbody > tr > th,
+    .table > tbody > tr > td {
+        padding: 12px 0;
+        font-weight: initial;
+    }
+
+    .table > tbody > tr > td:first-child {
+        color: #666666;
+    }
+</style>
+
+<div class="row fzdccard">
+    <div class="col-lg-3 col-xs-6">
+        <div class="small-box bg-card-1">
+            <div class="inner">
+                <p>店铺</p>
+                <h3>{$totalShop|htmlentities}</h3>
+                <p>商城店铺总数量</p>
+            </div>
+            <div class="icon">
+                <i class="fa fa-sitemap"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-xs-6">
+        <div class="small-box bg-card-2">
+            <div class="inner">
+                <p>商品</p>
+                <h3>{$totalGoods|htmlentities}</h3>
+                <p>商城店铺商品总和</p>
+            </div>
+            <div class="icon">
+                <i class="fa fa-shopping-cart"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-xs-6">
+        <div class="small-box bg-card-3">
+            <div class="inner">
+                <p>会员</p>
+                <h3>{$totalUser|htmlentities}</h3>
+                <p>平台注册会员总数</p>
+            </div>
+            <div class="icon">
+                <i class="fa fa-user-circle"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-xs-6">
+        <div class="small-box bg-card-4">
+            <div class="inner">
+                <p>今日会员</p>
+                <h3>{$totalDayUser|htmlentities}</h3>
+                <p>今日新增用户数量</p>
+            </div>
+            <div class="icon">
+                <i class="fa fa-user"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 资金 -->
+<div class="row">
+    <div class="col-xs-12">
+        <div class="row">
+            <div class="col-xs-3" style="margin-bottom:15px;">
+                <div class="panel panel-default panel-intro panel-statistics">
+                    <div class="panel-body">
+                        <h3>平台总流水</h3>
+                        <h4>￥{$MoneyPaySum|sprintf='%.2f',###}</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3" style="margin-bottom:15px;">
+                <div class="panel panel-default panel-intro panel-statistics">
+                    <div class="panel-body">
+                        <h3>今日订单金额</h3>
+                        <h4>￥{$MoneyLogDayPay|sprintf='%.2f',###}</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3" style="margin-bottom:15px;">
+                <div class="panel panel-default panel-intro panel-statistics">
+                    <div class="panel-body">
+                        <h3>昨日订单金额</h3>
+                        <h4>￥{$MoneyLogDayRecharge|sprintf='%.2f',###}</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3" style="margin-bottom:15px;">
+                <div class="panel panel-default panel-intro panel-statistics">
+                    <div class="panel-body">
+                        <h3>总库存</h3>
+                        <div class="panel-btn">
+                            <h4>{$initiateWithdraw|htmlentities} 个</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 百度图标 -->
+<div class="row">
+    <div class="col-xs-12 col-sm-6">
+        <div class="panel">
+            <div class="panel-body">
+                <div id="echarts_order"
+                     style="height: 365px; -webkit-tap-highlight-color: transparent; user-select: none; position: relative;"
+                     _echarts_instance_="ec_1605807574556">
+                    <div style="position: relative; width: 416px; height: 365px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;">
+                        <canvas data-zr-dom-id="zr_0" width="416" height="300"
+                                style="position: absolute; left: 0px; top: 0px; width: 416px; height: 265px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
+                    </div>
+                    <div style="position: absolute; display: none; border-style: solid; white-space: nowrap; z-index: 9999999; transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s, top 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s; background-color: rgba(50, 50, 50, 0.7); border-width: 0px; border-color: rgb(51, 51, 51); border-radius: 4px; color: rgb(255, 255, 255); font: 14px/21px &quot;Microsoft YaHei&quot;; padding: 5px; left: 372px; top: 265px; pointer-events: none;">
+                        21:00<br>订单数 : 0 个 <br>订单额 : 0 元
+                    </div>
+                </div>
+                <a href="javascript:" class="btn btn-refresh hidden" data-type="sale">订单统计</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-3">
+
+        <div class="panel panel-default panel-intro panel-statistics">
+            <div class="panel-body" style="height:397px">
+                <h4>TOP10 销量</h4>
+                <table class="table" style="width:100%">
+                    <thead>
+                    <tr>
+                        <th class="text-left">商品名称</th>
+                        <th class="text-right" width="50px">销量</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {foreach name="goodsTopList" id="item" empty="
+                    <tr>
+                        <td colspan='2' class='text-center'>暂无数据</td>
+                    </tr>
+                    "}
+                    <tr>
+                        <td class="vertical text-left">
+                            {$key+1}. {$item.title|htmlentities}
+                        </td>
+                        <td class="vertical text-right">
+                            {$item.sales|htmlentities}
+                        </td>
+                    </tr>
+                    {/foreach}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-xs-3">
+        <div class="panel panel-default panel-intro panel-statistics">
+            <div class="panel-body" style="height:397px">
+                <h4>新申请店铺</h4>
+                <table class="table" style="width:100%">
+                    <thead>
+                    <tr>
+                        <th class="text-left">店铺名称</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {foreach name="shopAuthList" id="item" empty="
+                    <tr>
+                        <td colspan='2' class='text-center'>暂无数据</td>
+                    </tr>
+                    "}
+                    <tr>
+                        <td class="vertical text-left">
+                            {$key+1}. {$item.shopname|htmlentities}
+                        </td>
+
+                    </tr>
+                    {/foreach}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- 列表 -->
+<div class="row fzdcllist">
+
+</div>

@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "分类列表",
+  "navigationBarBackgroundColor": "#fff",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-tabs": "/node-modules/uview-ui/components/u-tabs/u-tabs",
+    "u-loading-icon": "/node-modules/uview-ui/components/u-loading-icon/u-loading-icon",
+    "empty-page": "/components/emptyPage/emptyPage",
+    "u-swipe-action": "/node-modules/uview-ui/components/u-swipe-action/u-swipe-action",
+    "u-swipe-action-item": "/node-modules/uview-ui/components/u-swipe-action-item/u-swipe-action-item",
+    "u-switch": "/node-modules/uview-ui/components/u-switch/u-switch"
+  }
+}

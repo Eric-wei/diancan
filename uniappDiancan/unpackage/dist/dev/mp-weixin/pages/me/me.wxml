@@ -1,0 +1,1 @@
+<view><block wx:if="{{public.isnews==0}}"><view><oldme vue-id="8e55f700-1" user="{{user}}" bind:__l="__l"></oldme></view></block><block wx:else><view><newme class="vue-ref" vue-id="8e55f700-2" user="{{user}}" data-ref="newme" bind:__l="__l"></newme></view></block></view>
