@@ -1,0 +1,128 @@
+# ===========================
+# Uni-app 前端
+# ===========================
+
+# Node modules
+uniappDiancan/node_modules/
+uniappDiancan/package-lock.json
+uniappDiancan/yarn.lock
+
+# 编译输出
+uniappDiancan/unpackage/dist/
+uniappDiancan/unpackage/release/
+
+# 开发工具
+.DS_Store
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 日志文件
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 临时文件
+.temp/
+.cache/
+
+# ===========================
+# ThinkPHP 后端
+# ===========================
+
+# Runtime
+diancanServer/runtime/*
+!diancanServer/runtime/.gitkeep
+
+# Composer
+diancanServer/vendor/
+diancanServer/composer.lock
+
+# 上传文件
+diancanServer/public/uploads/*
+!diancanServer/public/uploads/.gitkeep
+
+# 配置文件（敏感信息）
+diancanServer/application/database.php
+diancanServer/application/extra/wechat.php
+diancanServer/.env
+
+# 日志文件
+diancanServer/application/log/
+diancanServer/*.log
+
+# 缓存文件
+diancanServer/application/cache/
+
+# ===========================
+# 系统文件
+# ===========================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ===========================
+# 编辑器
+# ===========================
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# ===========================
+# 其他
+# ===========================
+
+# 备份文件
+*.bak
+*.backup
+*.old
+
+# 压缩文件
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
+# 证书文件（敏感）
+*.pem
+*.key
+*.crt
+*.p12
+
+# 数据库备份
+*.sql
+*.dump
+
