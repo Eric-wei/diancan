@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "login": "/components/login/login",
+    "xm-bezier-cart": "/components/xm-bezier-cart/xm-bezier-cart"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "u-swiper": "/node-modules/uview-ui/components/u-swiper/u-swiper",
+    "u-popup": "/node-modules/uview-ui/components/u-popup/u-popup",
+    "login": "/components/login/login"
+  },
+  "component": true
+}

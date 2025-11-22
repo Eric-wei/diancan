@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>选择提现方式</title>
+    <defs>
+        <rect id="path-1" x="-1" y="879" width="751" height="148"></rect>
+        <filter x="-0.1%" y="-0.3%" width="100.1%" height="100.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.894117647   0 0 0 0 0.894117647   0 0 0 0 0.894117647  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="餐饮预订商家版" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="选择提现方式" transform="translate(-669.000000, -933.000000)">
+            <rect fill="#FAFAFA" x="0" y="0" width="750" height="1544"></rect>
+            <rect id="矩形" fill-opacity="0.401414991" fill="#000000" x="0" y="0" width="750" height="1544"></rect>
+            <path d="M20,747 L730,747 C741.045695,747 750,755.954305 750,767 L750,1544 L750,1544 L0,1544 L0,767 C-1.3527075e-15,755.954305 8.954305,747 20,747 Z" id="矩形" fill="#FFFFFF"></path>
+            <g id="矩形备份-24" fill="black" fill-opacity="1">
+                <use filter="url(#filter-2)" xlink:href="#path-1"></use>
+            </g>
+            <g id="未选中圆圈备份" transform="translate(669.000000, 933.000000)" fill-rule="nonzero">
+                <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="40" height="40"></rect>
+                <path d="M19.9391797,2.08210938 C24.849813,2.08210938 29.3034004,4.08098704 32.5291241,7.30904156 C35.7545423,10.5367903 37.7519531,14.9931451 37.7519531,19.9070312 C37.7519531,24.8211031 35.7548392,29.2773578 32.5294534,32.5049018 C29.3039989,35.7325146 24.8505733,37.7310547 19.9391797,37.7310547 C15.0281607,37.7310547 10.5747585,35.7324579 7.34927615,32.5047348 C4.12399243,29.2772104 2.12683594,24.8210294 2.12683594,19.9070312 C2.12683594,14.992693 4.12396558,10.5363237 7.34919654,7.30867983 C10.5746879,4.08077531 15.0281224,2.08210938 19.9391797,2.08210938 Z" id="形状" stroke="#00ABFF" stroke-width="2" fill="#FFFFFF"></path>
+                <path d="M19.9895203,7 C12.827077,7 7,12.8315997 7,20.0003544 C7,27.1692441 12.8270433,33 19.9895203,33 C27.1523685,33 32.9793443,27.1684003 32.9793443,20.0003881 C32.9793443,12.8315997 27.1523685,7 19.9895203,7 Z" id="路径" fill="#00ABFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

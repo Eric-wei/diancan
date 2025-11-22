@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "新增设置",
+  "navigationBarBackgroundColor": "#fff",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-upload": "/node-modules/uview-ui/components/u-upload/u-upload"
+  }
+}

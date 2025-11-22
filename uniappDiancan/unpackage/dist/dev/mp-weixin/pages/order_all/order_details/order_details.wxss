@@ -1,0 +1,145 @@
+
+page {
+	background: #FAFAFA !important;
+}
+
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* uni.scss */
+/* 颜色变量 */
+/* 行为相关颜色 - KFC主题色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.goodsnum {
+  font-size: 24rpx;
+  color: #777777;
+  margin-right: 20rpx;
+  line-height: 1;
+}
+.gifts {
+  width: 702rpx;
+  margin: auto;
+  background: #fff;
+  border-radius: 20rpx;
+  padding: 24rpx 0;
+  box-sizing: border-box;
+}
+.gifts .gifticon {
+  width: 48rpx;
+  height: 48rpx;
+  margin-right: 20rpx;
+}
+.gifts .giftt {
+  font-size: 24rpx;
+  color: #333333;
+  margin-right: 20rpx;
+}
+.gifts .giftnum {
+  font-size: 30rpx;
+  color: #FFC300;
+  margin-left: 5rpx;
+  margin-right: 5rpx;
+}
+.store {
+  width: 660rpx;
+  background: #FFFFFF;
+  border-radius: 18rpx;
+  margin: 20rpx auto;
+  padding: 0 20rpx;
+  padding-bottom: 30rpx;
+}
+.store .store_left {
+  padding: 20rpx 0rpx 0;
+}
+.store .store_left .store_left_1 {
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #393939;
+}
+.store .store_left .store_left_2 {
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #979797;
+}
+.store .store_content {
+  margin-top: 16rpx;
+}
+.store .store_content .store_content_text {
+  font-size: 24rpx;
+  margin-top: 16rpx;
+}
+.store .store_content image {
+  border: 1rpx solid #eee;
+  border-radius: 10rpx;
+  width: 103rpx;
+  height: 106rpx;
+  margin-right: 20rpx;
+}
+.store_down {
+  padding: 0 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24rpx;
+}
+.store_down .store_down_left {
+  width: 120rpx;
+  height: 45rpx;
+  border-radius: 7rpx;
+  border: 1rpx solid #00CCFF;
+  font-size: 22rpx;
+  font-weight: 400;
+  color: #00C8FF;
+  line-height: 45rpx;
+  text-align: center;
+}
+.store_down .store_down_right {
+  line-height: 1;
+}
+.store_down .store_down_right text:nth-child(1) {
+  font-size: 24rpx;
+  color: #333333;
+}
+.store_down .store_down_right text:nth-child(2) {
+  font-size: 34rpx;
+  font-weight: bold;
+  color: #333;
+}
+.refund {
+  width: 702rpx;
+  background: #FFFFFF;
+  border-radius: 18rpx;
+  margin: 0 auto;
+  color: #E40030;
+  font-size: 32rpx;
+  padding: 15px 0;
+  display: block;
+  text-align: center;
+}
+ .u-modal__content {
+  padding-top: 0 !important;
+}
+.slot-content {
+  padding-top: 20rpx;
+}
+

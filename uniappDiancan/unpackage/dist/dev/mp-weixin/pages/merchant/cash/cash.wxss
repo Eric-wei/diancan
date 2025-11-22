@@ -1,0 +1,228 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* uni.scss */
+/* 颜色变量 */
+/* 行为相关颜色 - KFC主题色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.withdrawalTitle {
+  font-weight: bold;
+  font-size: 34rpx;
+  color: #333333;
+}
+.withdrawaltype {
+  margin-top: 48rpx;
+}
+.withdrawaltype .withdrawaltypeimg {
+  width: 48rpx;
+  height: 48rpx;
+  margin-right: 20rpx;
+}
+.withdrawaltype .withdrawaltypetitle {
+  font-weight: 400;
+  font-size: 34rpx;
+  color: #333333;
+}
+.withdrawaltype .withdrawaltypetitlecode {
+  font-size: 24rpx;
+  color: #777777;
+  margin-top: 5rpx;
+}
+.checkboxs {
+  width: 48rpx;
+  height: 48rpx;
+}
+.checkboxs .checkboxnotselected {
+  width: 34rpx;
+  height: 34rpx;
+  border: 2rpx solid #999;
+  border-radius: 999%;
+}
+.checkboxs .checkboxselected {
+  width: 40rpx;
+  height: 40rpx;
+  border: 2rpx solid #fff;
+  border-radius: 999%;
+}
+.Withdrawal {
+  width: 686rpx;
+  padding: 24rpx 20rpx;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border-radius: 20rpx 20rpx 20rpx 20rpx;
+  margin: auto;
+  margin-bottom: 24rpx;
+}
+.Withdrawal .withdrawalHistory {
+  font-size: 24rpx;
+  color: #AAAAAA;
+}
+.Withdrawal .withdrawalTitle {
+  font-weight: 400;
+  font-size: 28rpx;
+  text-align: center;
+  margin-top: 40rpx;
+}
+.Withdrawal .canWithdrawal {
+  margin-top: 20rpx;
+  font-weight: bold;
+  font-size: 64rpx;
+  color: #333333;
+  text-align: center;
+}
+.add {
+  padding: 34rpx 40rpx;
+  box-sizing: border-box;
+  margin-right: 20rpx;
+  border-top: 1rpx solid #E4E4E4;
+}
+.add .left {
+  line-height: 90rpx;
+}
+.add .left image {
+  width: 90rpx;
+  height: 90rpx;
+}
+.popItem {
+  padding: 24rpx 40rpx;
+  box-sizing: border-box;
+  margin-right: 20rpx;
+  border-top: 1rpx solid #f3f3f3;
+}
+.popItem .head {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  margin-right: 14rpx;
+}
+.popItem .left .name {
+  font-size: 32rpx;
+  color: #333333;
+  margin: 0 0 10rpx 20rpx;
+  line-height: 80rpx;
+}
+.popItem .left .img {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  text-align: center;
+  line-height: 80rpx;
+}
+.popItem .left .phone {
+  font-size: 28rpx;
+  color: #777777;
+}
+.popItem .right {
+  line-height: 100rpx;
+}
+.popItem .right image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.popTitle {
+  text-align: center;
+  margin: 40rpx 0;
+  padding: 0 24rpx;
+  box-sizing: border-box;
+}
+page {
+  background: #FAFAFA;
+}
+.qrBtn {
+  width: 646rpx;
+  height: 80rpx;
+  background: #E40030;
+  border-radius: 8rpx 8rpx 8rpx 8rpx;
+  font-size: 30rpx;
+  color: #FFFFFF;
+  margin: auto;
+  margin-top: 100rpx;
+}
+.content {
+  width: 100%;
+  text-align: center;
+  height: 33rpx;
+  font-size: 24rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #AAAAAA;
+  line-height: 33rpx;
+  letter-spacing: 1px;
+  margin: 0 auto;
+}
+.navbar {
+  padding: 122rpx 50rpx 30rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.card {
+  width: 700rpx;
+  background: #FFFFFF;
+  border-radius: 14rpx;
+  margin: 20rpx auto;
+  padding: 30rpx 24rpx;
+  box-sizing: border-box;
+}
+.card image {
+  width: 30rpx;
+  height: 30rpx;
+}
+.card_one {
+  width: 700rpx;
+  background: #FFFFFF;
+  border-radius: 14rpx;
+  margin: 0 auto;
+  padding: 32rpx 25rpx;
+  box-sizing: border-box;
+}
+.card_one .top {
+  font-size: 28rpx;
+  color: #2F3337;
+}
+.card_one .center {
+  padding: 22rpx 0;
+  box-sizing: border-box;
+  margin-top: 48rpx;
+}
+.card_one .center .one {
+  font-size: 40rpx;
+  color: #2F3337;
+  margin-right: 16rpx;
+}
+.card_one .center .two {
+  width: 300rpx;
+  height: 50rpx;
+  font-size: 48rpx;
+  color: #2F3337;
+}
+.card_one .center .thr {
+  font-size: 26rpx;
+  color: #E40030;
+  margin-top: 10rpx;
+}
+.card_one .bom {
+  font-size: 24rpx;
+  color: #777777;
+}
+

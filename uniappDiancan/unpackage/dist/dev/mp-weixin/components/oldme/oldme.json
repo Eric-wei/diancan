@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "height": "/components/height/height",
+    "u-icon": "/node-modules/uview-ui/components/u-icon/u-icon",
+    "login": "/components/login/login"
+  },
+  "component": true
+}

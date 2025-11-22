@@ -1,0 +1,15 @@
+{
+  "navigationBarTitleText": "点餐",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#fff",
+  "usingComponents": {
+    "orderlist": "/components/orderlist/orderlist",
+    "u-empty": "/node-modules/uview-ui/components/u-empty/u-empty",
+    "ordercard": "/components/ordercard/ordercard",
+    "height": "/components/height/height",
+    "u-popup": "/node-modules/uview-ui/components/u-popup/u-popup",
+    "close": "/components/close/close",
+    "specification": "/components/specification/specification",
+    "login": "/components/login/login"
+  }
+}
