@@ -18,6 +18,7 @@
 							<u-icon v-else name="star" color='#313131' size="32"></u-icon>
 						</view>
 						<view class="flex ac" @tap.stop="goorderAll()">
+							<image class="store_image" :src="store_default_data.image" mode="aspectFill" v-if="store_default_data.image"></image>
 							<text>{{store_default_data.alias_title}}</text>
 							<u-icon v-if="option!==3" name="arrow-right" color='#313131' size="24rpx"></u-icon>
 						</view>
@@ -85,14 +86,6 @@
 			<orderlist @aid_mgs='aid_mgs' :rightId="rightId" :indexc='components_indexb' :content='store_infoApi_data'>
 			</orderlist>
 			<view class="felx_right_box">
-				<view class="felx_right_box_conten_img ">
-					<view class="felx_right_box_conten_imgss">
-						<image :src="list1" mode="aspectFill" style="width: 100%;height: 251rpx;border-radius: 12rpx;"
-							@click="swpclick(list1url)"></image>
-						<!-- <u-swiper :list="list1" :height='251' ></u-swiper> -->
-					</view>
-
-				</view>
 				<scroll-view class="felx_right_boxscroll" :scroll-with-animation="true" :scroll-into-view="leftId"
 					scroll-y="true" style="height: 100%;" @scroll="leftScroll">
 
@@ -988,6 +981,14 @@
 				font-weight: bold;
 				color: #313131;
 
+				.store_image {
+					width: 60rpx;
+					height: 60rpx;
+					border-radius: 8rpx;
+					margin-right: 12rpx;
+					margin-left: 12rpx;
+				}
+
 				text {
 					-webkit-line-clamp: 1; //设置几行
 					display: -webkit-box; //设置为伸缩盒弹性盒子展示
@@ -995,7 +996,7 @@
 					text-overflow: ellipsis; //设置超出部分以省略号展示
 					-webkit-box-orient: vertical; //伸缩盒弹性盒子的排列方式
 					margin-right: 6rpx;
-					margin-left: 12rpx;
+					margin-left: 0;
 				}
 
 			}
@@ -1072,7 +1073,7 @@
 			position: relative;
 
 			.felx_right_boxscroll {
-				padding: 255rpx 0 0 0;
+				padding: 0;
 				box-sizing: border-box;
 
 			}

@@ -4,7 +4,7 @@
 			<!-- add高度组件 -->
 			<view class="img_box">
 				<view class="img_box">
-					<u-swiper :list="list1" :indicator='false' keyName="image" indicatorMode='dot' :height='695'
+					<u-swiper :list="list1" :indicator='false' keyName="image" indicatorMode='dot' :height='565'
 						@click="hadeswp"></u-swiper>
 				</view>
 				<view class="flex jc ac">
@@ -50,20 +50,20 @@
 				<view class="card_1 flex jc ac">
 					<view class="card_1_left" @tap="router(1)" v-if="common.iszq==1">
 						<view class="card_1_left_img">
-							<image :src="Httpimg+'jg2.png'" mode="" v-if="Httpimg"></image>
+							<image :src="Httpimg+'jg2.png'" mode="aspectFill" v-if="Httpimg"></image>
 						</view>
 						<view class="">
-							<view class="cardBt">自取</view>
+							<view class="cardBt">到店自取</view>
 							<view class="cardLt">下单免排队</view>
 						</view>
 					</view>
 					<view class="card_1plank"></view>
 					<view class="card_1_right" @tap="router(2)" v-if="common.iswm==1">
 						<view class="card_1_left_img">
-							<image :src="Httpimg+'jg1.png'" mode="" v-if="Httpimg"></image>
+							<image :src="Httpimg+'jg1.png'" mode="aspectFill" v-if="Httpimg"></image>
 						</view>
 						<view class="">
-							<view class="cardBt">外卖</view>
+							<view class="cardBt">外卖到家</view>
 							<view class="cardLt">美食送到家</view>
 						</view>
 					</view>
@@ -362,6 +362,23 @@
 					this.enter = true
 					return
 				}
+				// 判断是否是优惠券，如果是则跳转到领券中心
+				let item = this.list2[url]
+				if (item) {
+					// 检查URL、标题或类型中是否包含优惠券相关关键词
+					let urlStr = item.url || ''
+					let titleStr = item.title || ''
+					let typeStr = item.type || ''
+					let imageStr = item.image || ''
+					
+					if (urlStr.includes('coupon') || urlStr.includes('优惠券') || urlStr.includes('领券') ||
+						titleStr.includes('优惠券') || titleStr.includes('领券') ||
+						typeStr === 'coupon' || typeStr === '优惠券' ||
+						imageStr.includes('coupon') || imageStr.includes('优惠券')) {
+						this.routergo('/pages/me_all/coupon_collection/coupon_collection')
+						return
+					}
+				}
 				let arr = ['/pages/index/index', '/pages/order/order', '/pages/order_form/order_form', '/pages/me/me']
 				if (arr.includes(this.list2[url].url)) {
 					uni.switchTab({
@@ -535,12 +552,24 @@
 
 	.img_box {
 		width: 100%;
-		height: 752rpx;
+		height: 622rpx;
 		position: relative;
+		overflow: hidden;
 
 		::v-deep .u-swiper__indicator {
 			position: absolute;
 			bottom: 150rpx !important;
+		}
+
+		::v-deep .u-swiper__wrapper__item__wrapper {
+			overflow: hidden !important;
+		}
+
+		::v-deep .u-swiper__wrapper__item__wrapper__image {
+			object-fit: cover !important;
+			width: 100% !important;
+			height: 100% !important;
+			object-position: center !important;
 		}
 
 		.img_box {
@@ -761,9 +790,15 @@
 				}
 
 				.card_1_left_img {
-					width: 88rpx;
-					height: 88rpx;
 					margin: auto;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					
+					image {
+						width: 120rpx;
+						height: 120rpx;
+					}
 				}
 			}
 
@@ -796,10 +831,15 @@
 				}
 
 				.card_1_left_img {
-					width: 88rpx;
-					height: 88rpx;
 					margin: auto;
-
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					
+					image {
+						width: 120rpx;
+						height: 120rpx;
+					}
 				}
 
 				.card_1_left_img_1 {
