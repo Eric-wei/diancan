@@ -1,0 +1,9 @@
+
+.line-1 {
+	/*文本内容超宽度省略号显示 单行*/
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	// width: 100%;
+}
+

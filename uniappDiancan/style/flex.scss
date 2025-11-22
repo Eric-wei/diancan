@@ -1,0 +1,27 @@
+
+.flexColumn {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* flex布局 */
+.d-flex {
+	display: flex;
+}
+
+.a-center {
+	display: flex;
+	align-items: center;
+}
+.j-sb{
+	justify-content: space-between;
+}
+
+
+.flex-jb{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+

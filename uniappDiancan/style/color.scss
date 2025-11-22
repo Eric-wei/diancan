@@ -1,0 +1,30 @@
+// 全局变量 - KFC主题色
+$primary-color:#E40030;
+
+.color-23{
+   // 局部变量 会覆盖全局变量   使用!global将局部变量变为全局变量
+	$primary-color:'#232323' !global;
+	color: $primary-color ;
+}
+.color-f{
+	color: #fff;
+}
+.color-1{
+	color: #E5BF8A;
+}
+.color-3{
+	color: #333;
+}
+.color-9{
+	color: #999;
+}
+.color-23{
+	color: #232323;
+}
+
+.color-3d{
+	color: #3d3d3d;
+}
+.color-red{
+	color: red;
+}

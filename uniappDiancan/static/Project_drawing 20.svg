@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="30px" viewBox="0 0 23 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组备份</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="切图" transform="translate(-321.000000, -963.000000)" fill="#02B6FD" fill-rule="nonzero">
+            <g id="编组备份" transform="translate(321.000000, 963.000000)">
+                <path d="M11.5,0 L0,5.45454545 L0,13.6363636 C0,21.2032086 4.89863326,28.2620321 11.5,30 C18.1013667,28.2887701 23,21.2032086 23,13.6363636 L23,5.45454545 L11.5,0 Z M11.1224066,19.4552846 L9.58506224,21 L8.04771784,19.4552846 L5,16.3929539 L6.5373444,14.8482385 L9.58506224,17.9105691 L16.4626556,11 L18,12.5447154 L11.1224066,19.4552846 Z" id="形状"></path>
+            </g>
+        </g>
+    </g>
+</svg>
