@@ -410,27 +410,81 @@ chmod -R 777 public/uploads/
 
 ## 📸 项目截图
 
+> 💡 **提示**：完整的截图说明和规范请查看 [screenshots/README.md](screenshots/README.md)
+
 ### 用户端
 
-#### 首页
-![首页](screenshots/home.png)
+<table>
+  <tr>
+    <td align="center">
+      <img src="screenshots/demo-ui.png" width="200px" alt="UI演示" />
+      <br />
+      <sub><b>UI 演示</b></sub>
+    </td>
+    <td align="center">
+      <img src="screenshots/tab-order.png" width="200px" alt="点餐" />
+      <br />
+      <sub><b>点餐页面</b></sub>
+    </td>
+    <td align="center">
+      <img src="screenshots/tab-orderlist.png" width="200px" alt="订单" />
+      <br />
+      <sub><b>订单列表</b></sub>
+    </td>
+    <td align="center">
+      <img src="screenshots/tab-profile.png" width="200px" alt="我的" />
+      <br />
+      <sub><b>个人中心</b></sub>
+    </td>
+  </tr>
+</table>
 
-#### 点餐页面
-![点餐](screenshots/order.png)
+### 主要功能展示
 
-#### 订单列表
-![订单列表](screenshots/order-list.png)
+#### 🏠 首页
+- 门店选择（自取/外卖切换）
+- 轮播广告展示
+- 商品分类导航
+- 搜索功能
 
-#### 个人中心
-![个人中心](screenshots/profile.png)
+#### 🍔 点餐页面
+- **KFC 红色主题**（#E40030）
+- 左侧分类菜单（选中项红色背景）
+- 商品列表展示
+- 购物车管理
+- 商品规格选择
+
+#### 📋 订单管理
+- 订单状态筛选（全部/待付款/待接单/配送中/已完成）
+- 订单详情查看
+- 在线支付
+- 订单评价
+
+#### 👤 个人中心
+- 个人信息管理
+- 优惠券中心
+- 积分商城
+- 我的钱包
+- 收货地址
 
 ### 商家端
 
-#### 订单管理
-![商家订单](screenshots/merchant-order.png)
+#### 📊 订单管理
+- 实时订单提醒
+- 订单接单/拒单
+- 配送状态管理
 
-#### 商品管理
-![商品管理](screenshots/merchant-product.png)
+#### 🍕 商品管理
+- 商品分类管理
+- 商品上下架
+- 规格模板设置
+
+---
+
+> 📝 **截图说明**：
+> - 当前展示的是项目图标和UI演示图
+> - 完整的小程序截图需要在微信开发者工具或真机中获取
+> - 详细的截图指南请参考 [screenshots/README.md](screenshots/README.md)
 
 ---
 
