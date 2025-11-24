@@ -321,42 +321,133 @@
 				})
 
 			},
-			async router(url) {
+		async router(url) {
+			// 检查是否已登录
+			if (!uni.getStorageSync('userinfo')) {
+				this.enter = true
+				return
+			}
+			
+			try {
 				let shop = uni.getStorageSync('shop')
 				let idx = uni.getStorageSync('option')
+				
+				// 显示加载提示
+				uni.showLoading({
+					title: '加载中...',
+					mask: true
+				})
+				
+				// 调用默认门店接口，如果没有shop则获取默认门店
 				let data = await store_default({
 					id: shop || ''
 				})
-				if (data.code == 1) {
+				
+				uni.hideLoading()
+				
+				if (data && data.code == 1 && data.data) {
+					// 保存门店信息
+					uni.setStorageSync('shop', data.data.id)
+					uni.setStorageSync('currentShop', data.data)
+					
+					// 检查门店是否营业
+					if (data.data.is_business == 0) {
+						uni.showModal({
+							title: '提示',
+							content: '该店铺已歇业，是否选择其他门店？',
+							success: (res) => {
+								if (res.confirm) {
+									uni.navigateTo({
+										url: '/pages/order_all/selectstore/selectstore'
+									})
+								}
+							}
+						})
+						return
+					}
+					
+					// 检查外卖开关
 					if (url == 2) {
 						if (data.data.takeaway_switch == 0) {
-							uni.showToast({
-								title: '该店铺暂不支持外卖',
-								icon: "none"
+							uni.showModal({
+								title: '提示',
+								content: '该店铺暂不支持外卖，是否选择到店自取？',
+								success: (res) => {
+									if (res.confirm && data.data.delivery_switch == 1) {
+										// 切换到自取模式
+										this.router(1)
+									} else if (res.confirm) {
+										// 选择其他门店
+										uni.navigateTo({
+											url: '/pages/order_all/selectstore/selectstore'
+										})
+									}
+								}
 							})
 							return
 						}
 					} else {
+						// 检查自取开关
 						if (data.data.delivery_switch == 0) {
-							uni.showToast({
-								title: '该店铺暂不支持自提',
-								icon: "none"
+							uni.showModal({
+								title: '提示',
+								content: '该店铺暂不支持自提，是否选择外卖配送？',
+								success: (res) => {
+									if (res.confirm && data.data.takeaway_switch == 1) {
+										// 切换到外卖模式
+										this.router(2)
+									} else if (res.confirm) {
+										// 选择其他门店
+										uni.navigateTo({
+											url: '/pages/order_all/selectstore/selectstore'
+										})
+									}
+								}
 							})
 							return
 						}
 					}
+					
+					// 如果切换了订单类型，清空购物车
+					if (idx !== url) {
+						await order_empty()
+					}
+					
+					uni.setStorageSync('tableNumber', false)
+					uni.setStorageSync('option', url)
+					uni.reLaunch({
+						url: '/pages/order/order'
+					})
+				} else {
+					// 没有获取到门店信息，提示选择门店
+					uni.showModal({
+						title: '提示',
+						content: '暂无可用门店，请先选择门店',
+						success: (res) => {
+							if (res.confirm) {
+								uni.navigateTo({
+									url: '/pages/order_all/selectstore/selectstore'
+								})
+							}
+						}
+					})
 				}
-				if (idx !== url) {
-					order_empty()
-				}
-				uni.setStorageSync('tableNumber', false)
-				uni.setStorageSync('option', url)
-				uni.reLaunch({
-					url: '/pages/order/order'
+			} catch (err) {
+				uni.hideLoading()
+				console.error('router error:', err)
+				uni.showModal({
+					title: '提示',
+					content: '网络错误，请检查网络后重试或选择门店',
+					success: (res) => {
+						if (res.confirm) {
+							uni.navigateTo({
+								url: '/pages/order_all/selectstore/selectstore'
+							})
+						}
+					}
 				})
-
-
-			},
+			}
+		},
 			swp(url) {
 				if (!uni.getStorageSync('userinfo')) {
 					this.enter = true
