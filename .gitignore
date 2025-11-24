@@ -85,6 +85,7 @@ $RECYCLE.BIN/
 # VSCode
 .vscode/
 *.code-workspace
+.history/
 
 # JetBrains IDEs
 .idea/
