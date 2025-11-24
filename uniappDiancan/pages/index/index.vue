@@ -435,9 +435,18 @@
 			} catch (err) {
 				uni.hideLoading()
 				console.error('router error:', err)
+				
+				// 根据错误类型显示不同的提示
+				let errorMsg = '请求失败，请稍后重试或选择门店'
+				if (err && err.msg) {
+					errorMsg = err.msg
+				} else if (err && err.message) {
+					errorMsg = err.message
+				}
+				
 				uni.showModal({
 					title: '提示',
-					content: '网络错误，请检查网络后重试或选择门店',
+					content: errorMsg,
 					success: (res) => {
 						if (res.confirm) {
 							uni.navigateTo({
